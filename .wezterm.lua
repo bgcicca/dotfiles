@@ -34,6 +34,11 @@ end
 return {
   default_prog = { "pwsh.exe", "-NoLogo" }, 
   launch_menu = launch_menu, 
+  enable_wayland = false,
+
+  default_cursor_style = "SteadyBlock",
+  force_reverse_video_cursor = true,
+  term = "xterm-256color",
 
   font = wezterm.font_with_fallback({
     "JetBrains Mono",
@@ -209,13 +214,15 @@ return {
     top = 5,
     bottom = 5,
   },
-  default_cursor_style = "BlinkingBar",
-  window_decorations = "RESIZE | TITLE",
-  cell_width = 0.9,
 
-  window_frame = {
-    active_titlebar_bg = "transparent",
-    inactive_titlebar_bg = "#333333",
-  },
-
+	default_cursor_style = "SteadyBlock", 
+	cursor_blink_rate = 0,               
+	term = "xterm",  
+	window_decorations = "RESIZE | TITLE",  
+	cell_width = 0.9,
+  
+	window_frame = {
+	  active_titlebar_bg = "transparent",  
+	  inactive_titlebar_bg = "#333333",   
+	},
 }
