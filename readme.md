@@ -19,3 +19,4 @@ these are my personal dotfiles, with my .bashrc, the fastvim distro which is der
 - [nekonight](https://github.com/BrunoCiccarino/nekonight)
 
 ![preview](./dotfiles.jpg)
+![wezterm preview](./wezterm.jpg)
