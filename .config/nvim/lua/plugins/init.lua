@@ -162,7 +162,9 @@ return {
     "BrunoCiccarino/nekonight",
     lazy = false,
     priority = 1000,
-    opts = {},
+    opts = function ()
+      require('configs.ui.nekonight')
+    end
   },
   {
     'jmbuhr/otter.nvim',
