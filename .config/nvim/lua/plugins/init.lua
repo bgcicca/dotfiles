@@ -30,12 +30,6 @@ return {
     end,
   },
   {
-    "aaron-p1/match-visual.nvim",
-    config = function ()
-      require('configs.ui.match-visual')
-    end
-  },
-  {
     "hrsh7th/nvim-cmp",
     event = "InsertEnter",
     dependencies = {
@@ -105,12 +99,6 @@ return {
     end
   },
   {
-        'barrett-ruth/live-server.nvim',
-        build = 'pnpm add -g live-server',
-        cmd = { 'LiveServerStart', 'LiveServerStop' },
-        config = true
-    },
-  {
     'pmizio/typescript-tools.nvim',
   dependencies = { 'nvim-lua/plenary.nvim', 'neovim/nvim-lspconfig' },
   opts = {},
@@ -165,36 +153,10 @@ return {
       end
   },
   {
-    "nvim-neorg/neorg",
-    lazy = false,
-    config = function()
-        require('neorg').setup {
-            load = {
-                ["core.defaults"] = {}, 
-                ["core.concealer"] = {}, 
-                ["core.dirman"] = { 
-                    config = {
-                        workspaces = {
-                            notes = "~/neorg/notes", 
-                        },
-                        default_workspace = "notes",
-                    },
-                },
-            },
-        }
-    end,
-  },
-  {
   'stevearc/conform.nvim',
   opts = function ()
-    require('configs.editor.conform')
+    require('configs.conform')
   end
-  },
-  {
-    'grzegorzszczepanek/gamify.nvim',
-    config = function()
-      require('gamify')
-    end,
   },
   {
     "BrunoCiccarino/nekonight",
@@ -238,13 +200,6 @@ return {
       require('configs.editor.toggleterm')
     end
   },
---  {
---    'jose-elias-alvarez/null-ls.nvim',
---    dependencies = { 'nvim-lua/plenary.nvim' },
---    config = function()
---      require('configs.null-ls').setup()
---    end,
---  },
   {
     'folke/neodev.nvim',
     config = function()
@@ -254,19 +209,11 @@ return {
   {
     "folke/noice.nvim",
     event = "VeryLazy",
-    opts = {
-      -- add any options here
-    },
     dependencies = {
-      -- if you lazy-load any plugin below, make sure to add proper `module="..."` entries
       "MunifTanjim/nui.nvim",
-      -- OPTIONAL:
-      --   `nvim-notify` is only needed, if you want to use the notification view.
-      --   If not available, we use `mini` as the fallback
       "rcarriga/nvim-notify",
     }
   },
-
   {
     "nvim-tree/nvim-tree.lua",
     cmd = { "NvimTreeToggle", "NvimTreeFocus" },
@@ -274,12 +221,10 @@ return {
       require('configs.nvim-tree')
     end
   },
-
   {
     "nvim-tree/nvim-web-devicons",
     opts = {},
   },
-
   {
     "nvim-treesitter/nvim-treesitter",
     build = ":TSUpdate",
@@ -287,7 +232,6 @@ return {
       require ('configs.treesitter')
     end,
   },
-
   {
     "akinsho/bufferline.nvim",
     event = "BufReadPre",
@@ -300,10 +244,6 @@ return {
       require('mini.statusline').setup { set_vim_settings = false }
     end,
   },
-
-  -- we use cmp plugin only when in insert mode
-  -- so lets lazyload it at InsertEnter event, to know all the events check h-events
-  -- completion , now all of these plugins are dependent on cmp, we load them after cmp
   {
     "williamboman/mason.nvim",
     build = ":MasonUpdate",
@@ -317,7 +257,6 @@ return {
       }
     },
   },
-
   {
     "neovim/nvim-lspconfig",
     event = { "BufReadPre", "BufNewFile" },
@@ -340,8 +279,6 @@ return {
       }
     end,
   },
-
-  -- files finder etc
   {
     "nvim-telescope/telescope.nvim",
     cmd = "Telescope",
