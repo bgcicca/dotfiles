@@ -17,6 +17,7 @@ set guicursor=n-v-c:block,i:block,r-cr:hor20,o:hor50
 call vundle#begin('C:\Users\Usuario\.vim\bundle\')
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'neko-night/Vim'
+Plugin 'tpope/vim-commentary'
 call vundle#end()
 
 let mapleader = "\\"
@@ -24,11 +25,12 @@ let mapleader = "\\"
 set backspace=indent,eol,start
 set termguicolors
 
-nnoremap <C-s> :w<CR>
 inoremap jk <ESC>
 nnoremap <C-c> :%y+<CR>
+nnoremap <C-s> :w<CR>
 nnoremap <Leader>t :terminal<CR>
 nnoremap <C-v> "+p
+nnoremap <C-z> u
 vnoremap <C-v> "+p
 inoremap <C-v> <Esc>"+pa
 inoremap <A-Up> <Esc>:m-2<CR>a
