@@ -53,8 +53,7 @@
                 "size": 10
             },
         "opacity": 80,
-        "padding": 8,
-        "useAcrylic": true
+        "useAcrylic": false
         },
         "list": 
         [
