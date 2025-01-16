@@ -18,3 +18,4 @@ these are my personal dotfiles, with my .bashrc, the fastvim distro which is der
   - [iterm2](https://iterm2.com/) **_(Macos)_**
 - [nekonight](https://github.com/BrunoCiccarino/nekonight)
 
+![preview](./dotfiles.jpg)
