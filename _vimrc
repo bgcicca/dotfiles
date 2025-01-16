@@ -1,4 +1,5 @@
 set runtimepath+=C:\Users\Usuario\.vim\bundle\Vundle.vim
+set runtimepath+=%USERPROFILE%\.vim\bundle\YouCompleteMe
 
 syntax on
 set nocompatible
@@ -28,3 +29,6 @@ nnoremap <C-c> :%y+<CR>
 nnoremap <Leader>t :terminal<CR>
 
 colorscheme nekonight-night
+
+let g:ycm_global_ycm_extra_conf = '%USERPROFILE%\.vim\bundle\YouCompleteMe\third_party\ycmd\examples\ycm_extra_conf.py'
+set completeopt=menuone,noinsert,noselect
