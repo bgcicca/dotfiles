@@ -29,7 +29,8 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'ryanoasis/vim-devicons'
 Plugin 'ap/vim-css-color'
-
+Plugin 'easymotion/vim-easymotion'
+Plugin 'terryma/vim-multiple-cursors'
 call vundle#end()
 
 let mapleader = "\\"
@@ -45,7 +46,7 @@ nnoremap <C-v> "+p
 nnoremap <C-z> u
 vnoremap <C-v> "+p
 nnoremap <C-f> :NERDTreeFind<CR>
-nnoremap <leader>n :NERDTreeFocus<CR>
+nnoremap <Leader>n :NERDTreeFocus<CR>
 nnoremap <C-n> :NERDTree<CR>
 nnoremap <C-t> :NERDTreeToggle<CR>
 nnoremap <Leader>p :Prettier<CR>
@@ -80,4 +81,9 @@ let g:airline#extensions#tabline#left_alt_sep = '|'
 let g:airline#extensions#tabline#enabled = 1
 
 let g:airline_theme='molokai'
+
+let g:EasyMotion_do_mapping = 0
+let g:EasyMotion_smartcase = 1
+nmap f <Plug>(easymotion-s)
+
 
