@@ -8,9 +8,9 @@ set shiftwidth=4
 set tabstop=4
 set autoindent
 set smartindent
-set backspace=indent,eol,start
 set mouse=a
-set guicursor=
+set cursorline
+set guicursor=n-v-c:block,i:block,r-cr:hor20,o:hor50
 
 call vundle#begin('C:\Users\Usuario\.vim\bundle\')
 Plugin 'VundleVim/Vundle.vim'
@@ -18,13 +18,10 @@ Plugin 'neko-night/Vim'
 call vundle#end()
 
 let mapleader = "\\"
-let &t_SI = ""
-let &t_EI = ""
 
 set backspace=indent,eol,start
 set termguicolors
 
-nnoremap dd "_dd
 nnoremap <C-s> :w<CR>
 inoremap jk <ESC>
 nnoremap <C-c> :%y+<CR>
