@@ -12,6 +12,8 @@ export PATH=$HOME/.npm-global/bin:$PATH
 export PATH=/home/brunociccarino/.nimble/bin:$PATH
 export PATH="/home/brunociccarino/melt:$PATH"
 export PATH="/home/brunociccarino/min/bin:$PATH"
+export PATH="$PATH:/mnt/c/Users/Usuario/AppData/Local/Programs/Microsoft VS Code/bin"
+export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
