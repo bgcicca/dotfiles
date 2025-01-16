@@ -21,6 +21,10 @@ Plugin 'neko-night/Vim'
 Plugin 'tpope/vim-commentary'
 Plugin 'preservim/nerdtree'
 Plugin 'jiangmiao/auto-pairs'
+Plugin 'pangloss/vim-javascript'
+Plugin 'mxw/vim-jsx' 
+Plugin 'dense-analysis/ale' 
+Plugin 'prettier/vim-prettier', {'do': 'npm install'}
 call vundle#end()
 
 filetype plugin indent on
@@ -38,6 +42,7 @@ nnoremap <C-f> :NERDTreeFind<CR>
 nnoremap <leader>n :NERDTreeFocus<CR>
 nnoremap <C-n> :NERDTree<CR>
 nnoremap <C-t> :NERDTreeToggle<CR>
+nnoremap <Leader>p :Prettier<CR>
 inoremap <C-v> <Esc>"+pa
 inoremap <A-Up> <Esc>:m-2<CR>a
 inoremap <A-Down> <Esc>:m+<CR>a
@@ -48,3 +53,17 @@ colorscheme nekonight-night
 
 let g:ycm_global_ycm_extra_conf = '~/.vim/bundle/YouCompleteMe/third_party/ycmd/examples/ycm_extra_conf.py'
 set completeopt=menuone,noinsert,noselect
+
+let g:ale_linters = {
+\   'javascript': ['eslint'],
+\   'javascriptreact': ['eslint'],
+\}
+let g:ale_fixers = {
+\   'javascript': ['prettier'],
+\   'javascriptreact': ['prettier'],
+\}
+let g:ale_fix_on_save = 1
+
+let g:prettier#exec_cmd_async = 1
+let g:prettier#autoformat = 1
+let g:prettier#autoformat_require_pragma = 0
