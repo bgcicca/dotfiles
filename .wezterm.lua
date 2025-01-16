@@ -198,18 +198,8 @@ return {
 		{ key = "Insert", mods = "CTRL", action = act.CopyTo("PrimarySelection") },
 		{ key = "F11", mods = "NONE", action = act.ToggleFullScreen },    
   },
-  scrollback_lines = 10000,  
-  enable_scroll_bar = true,  
 
-  scroll_bar = {
-    width = "2",               
-    color = "#FFFFFF",   
-  },
-
-  window_background_opacity = 1.8,
-  win32_acrylic = true,
-  win32_acrylic_inactive = true,
-  win32_acrylic_accent_color = "rgb(94, 64, 157)",
+  window_background_opacity = 0.7,
   webgpu_power_preference = "HighPerformance",
   front_end = "OpenGL",
   prefer_egl = true,
@@ -228,13 +218,4 @@ return {
     inactive_titlebar_bg = "#333333",
   },
 
-  background = {
-    {
-      hsb = {
-        brightness = 0.3,
-        saturation = 0.7,
-        hue = 0.5,
-      },
-    },
-  },
 }
