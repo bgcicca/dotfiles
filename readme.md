@@ -20,3 +20,4 @@ these are my personal dotfiles, with my .bashrc, the fastvim distro which is der
 
 ![preview](./dotfiles.jpg)
 ![wezterm preview](./wezterm.jpg)
+![windows terminal preview](./windows_terminal.jpg)
