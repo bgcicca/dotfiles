@@ -93,8 +93,6 @@ To streamline workflows, I’ve customized the keybindings to match my needs. Fo
 - Ctrl+L and Ctrl+Shift+L to show the debug overlay.
 - Ctrl+Alt+Number for split operations using pane domains.
 
-These bindings ensure that I can navigate and use the terminal efficiently, without having to memorize a plethora of new shortcuts.
-
 ### Pane Management
 
 Split panes are an essential feature, allowing me to work on multiple tasks simultaneously. My configuration supports both horizontal and vertical splits with intuitive shortcuts like `Ctrl+"` and `Ctrl+%`.
