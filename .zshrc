@@ -9,7 +9,6 @@ plugins=(
   command-not-found
 )
 
-eval $(thefuck --alias)
 
 source $ZSH/oh-my-zsh.sh
 export LANG=pt_BR.UTF-8
@@ -21,3 +20,8 @@ else
  fi
 
 
+eval $(thefuck --alias)
+
+export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
+export PATH="/home/linuxbrew/.linuxbrew/sbin:$PATH"
+export PATH="/home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin:$PATH"
