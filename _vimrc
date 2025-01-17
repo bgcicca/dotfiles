@@ -31,6 +31,7 @@ Plugin 'ryanoasis/vim-devicons'
 Plugin 'ap/vim-css-color'
 Plugin 'easymotion/vim-easymotion'
 Plugin 'terryma/vim-multiple-cursors'
+Plugin 'fatih/vim-go'
 call vundle#end()
 
 let mapleader = "\\"
@@ -65,12 +66,26 @@ let g:ale_linters = {
 \   'javascript': ['eslint'],
 \   'javascriptreact': ['eslint'],
 \}
+
 let g:ale_fixers = {
 \   'javascript': ['prettier'],
 \   'javascriptreact': ['prettier'],
+\   'typescript': ['prettier'],
+\   'typescriptreact': ['prettier'],
+\   'css': ['prettier'],
+\   'scss': ['prettier'],
+\   'less': ['prettier'],
+\   'json': ['prettier'],
+\   'graphql': ['prettier'],
+\   'markdown': ['prettier'],
+\   'yaml': ['prettier'],
+\   'html': ['prettier'],
+\   'vue': ['prettier']
 \}
+
 let g:ale_fix_on_save = 1
 
+let g:ale_fix_on_save = 1
 let g:prettier#exec_cmd_async = 1
 let g:prettier#autoformat = 1
 let g:prettier#autoformat_require_pragma = 0
@@ -85,5 +100,4 @@ let g:airline_theme='molokai'
 let g:EasyMotion_do_mapping = 0
 let g:EasyMotion_smartcase = 1
 nmap f <Plug>(easymotion-s)
-
 
