@@ -19,6 +19,7 @@ These are my personal dotfiles, including my `.bashrc`, the FastVim distro deriv
 - [**nekonight**](https://github.com/BrunoCiccarino/nekonight): My custom colorscheme.
 - [**YouCompleteMe**](https://github.com/ycm-core/YouCompleteMe): Autocompletion and code navigation.
 - [**npm**](https://www.npmjs.com/): Required for vim-prettier.
+- [**fzf**](https://github.com/junegunn/fzf): Required for vim config
 
 ![preview](./dotfiles.jpg)
 ![wezterm preview](./wezterm.jpg)
