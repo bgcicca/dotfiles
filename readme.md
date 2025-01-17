@@ -28,7 +28,7 @@ these are my personal dotfiles, with my .bashrc, the fastvim distro which is der
 
 - Terminal: **wezterm**
 - Text editor: **neovim**
-- Shell: **zsh**
+- Shell: **zsh/powershell**
 
 ### Why Vim?
 
