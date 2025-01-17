@@ -11,6 +11,7 @@ set clipboard=unnamedplus
 set guicursor=n-v-c:block,i:block,r-cr:hor20,o:hor50
 set history=500
 set termguicolors
+set encoding=utf-8
 
 set runtimepath+=~/.vim/bundle/Vundle.vim
 set runtimepath+=~/.vim/bundle/YouCompleteMe
@@ -32,6 +33,8 @@ Plugin 'ap/vim-css-color'
 Plugin 'easymotion/vim-easymotion'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'fatih/vim-go'
+Plugin 'junegunn/fzf'
+Plugin 'junegunn/fzf.vim'
 call vundle#end()
 
 filetype plugin indent on
@@ -98,3 +101,38 @@ let g:EasyMotion_do_mapping = 0
 let g:EasyMotion_smartcase = 1
 nmap f <Plug>(easymotion-s)
 
+let g:fzf_layout = { 'down': '~40%' }
+let g:fzf_colors = {
+\ 'fg':      ['fg', 'Normal'],
+\ 'bg':      ['bg', 'Normal'],
+\ 'hl':      ['fg', 'Comment'],
+\ 'fg+':     ['fg', 'CursorLine', 'CursorColumn', 'Normal'],
+\ 'bg+':     ['bg', 'CursorLine', 'CursorColumn'],
+\ 'hl+':     ['fg', 'Statement'],
+\ 'info':    ['fg', 'PreProc'],
+\ 'border':  ['fg', 'Ignore'],
+\ 'prompt':  ['fg', 'Conditional'],
+\ 'pointer': ['fg', 'Exception'],
+\ 'marker':  ['fg', 'Keyword'],
+\ 'spinner': ['fg', 'Label'],
+\ 'header':  ['fg', 'Comment'] }
+
+nnoremap <C-p> :Files<CR>
+nnoremap <Leader>b :Buffers<CR>
+nnoremap <Leader>h :History<CR>
+nnoremap <Leader>g :Rg<CR>
+
+if executable('rg')
+  let g:fzf_command_prefix = 'Fzf'
+  let $FZF_DEFAULT_COMMAND = 'rg --files --hidden --glob "!.git/*"'
+endif
+
+nnoremap <Leader>/ :BLines<CR>
+nnoremap <Leader>* :Rg <C-r><C-w><CR>
+
+if executable('rg')
+  command! -bang -nargs=* Rg
+        \ call fzf#vim#grep(
+        \   'rg --hidden --column --line-number --no-heading --color=always --smart-case -- '.shellescape(<q-args>), 1,
+        \   fzf#vim#with_preview(), <bang>0)
+endif
