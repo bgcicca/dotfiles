@@ -1,4 +1,4 @@
-# dotfiles
+# dotfiles (>^.^<)
 
 These are my personal dotfiles, including my `.bashrc`, the FastVim distro derived from my personal Neovim configuration, my WezTerm configuration, and my Emacs configuration.
 
@@ -10,12 +10,12 @@ These are my personal dotfiles, including my `.bashrc`, the FastVim distro deriv
 - A [**Nerd Font**](https://www.nerdfonts.com/) (v3.0 or greater): **Optional**, but necessary for some icons.
 - A **C compiler** for `nvim-treesitter`. See [nvim-treesitter requirements](https://github.com/nvim-treesitter/nvim-treesitter#requirements).
 - **Telescope.nvim** dependencies (optional):
-  - **live grep**: [ripgrep](https://github.com/BurntSushi/ripgrep).
-  - **find files**: [fd](https://github.com/sharkdp/fd).
-- A terminal supporting true color and *undercurl*:
-  - [WezTerm](https://github.com/wez/wezterm) **(Linux, macOS, Windows)**.
-  - [Alacritty](https://github.com/alacritty/alacritty) **(Linux, macOS, Windows)**.
-  - [iTerm2](https://iterm2.com/) **(macOS)**.
+    - **live grep**: [ripgrep](https://github.com/BurntSushi/ripgrep).
+    - **find files**: [fd](https://github.com/sharkdp/fd).
+- A terminal supporting true color and _undercurl_:
+    - [WezTerm](https://github.com/wez/wezterm) **(Linux, macOS, Windows)**.
+    - [Alacritty](https://github.com/alacritty/alacritty) **(Linux, macOS, Windows)**.
+    - [iTerm2](https://iterm2.com/) **(macOS)**.
 - [**nekonight**](https://github.com/BrunoCiccarino/nekonight): My custom colorscheme.
 - [**YouCompleteMe**](https://github.com/ycm-core/YouCompleteMe): Autocompletion and code navigation.
 - [**npm**](https://www.npmjs.com/): Required for vim-prettier.
@@ -118,48 +118,55 @@ Alright, let’s talk about how this Vim configuration works and how you can nav
 Here’s how I’ve customized the keybindings to make navigation and editing a breeze:
 
 1. **Escape Insert Mode**:
-   - `jk`: Quick escape from insert mode.
+
+    - `jk`: Quick escape from insert mode.
 
 2. **File Operations**:
-   - `Ctrl+S`: Save the current file.
-   - `Ctrl+C`: Copy the entire file to the clipboard.
+
+    - `Ctrl+S`: Save the current file.
+    - `Ctrl+C`: Copy the entire file to the clipboard.
 
 3. **NERDTree**:
-   - `Ctrl+N`: Open NERDTree.
-   - `Ctrl+T`: Toggle NERDTree visibility.
-   - `Leader+N`: Focus on the NERDTree window.
+
+    - `Ctrl+N`: Open NERDTree.
+    - `Ctrl+T`: Toggle NERDTree visibility.
+    - `Leader+N`: Focus on the NERDTree window.
 
 4. **Prettier**:
-   - `Leader+P`: Format the current file with Prettier.
+
+    - `Leader+P`: Format the current file with Prettier.
 
 5. **Clipboard Operations**:
-   - `Ctrl+V`: Paste from the system clipboard.
-   - `Ctrl+Z`: Undo the last action.
+
+    - `Ctrl+V`: Paste from the system clipboard.
+    - `Ctrl+Z`: Undo the last action.
 
 6. **Terminal**:
-   - `Leader+T`: Open a terminal split.
+
+    - `Leader+T`: Open a terminal split.
 
 7. **Search and Navigation**:
-   - `Ctrl+F`: Open NERDTree at the current file.
-   - `Leader+F`: Jump to a specific function or search.
+
+    - `Ctrl+F`: Open NERDTree at the current file.
+    - `Leader+F`: Jump to a specific function or search.
 
 8. **Movement Enhancements**:
-   - `Alt+Up` or `Alt+Down`: Move lines up or down.
+    - `Alt+Up` or `Alt+Down`: Move lines up or down.
 
 ### FZF Integration
 
 I’ve added [fzf.vim](https://github.com/junegunn/fzf.vim) to enhance file searching and navigation:
 
 - **Files Search**:
-  - `Ctrl+P`: Quickly find and open files in the project.
+    - `Ctrl+P`: Quickly find and open files in the project.
 - **Buffer Navigation**:
-  - `Leader+B`: Switch between open buffers.
+    - `Leader+B`: Switch between open buffers.
 - **Project Search**:
-  - `Leader+G`: Search for text across the entire project using `ripgrep`.
+    - `Leader+G`: Search for text across the entire project using `ripgrep`.
 - **Current Buffer Search**:
-  - `Leader+/`: Search within the current buffer.
+    - `Leader+/`: Search within the current buffer.
 - **Word Search**:
-  - `Leader+*`: Find occurrences of the word under the cursor in the project.
+    - `Leader+*`: Find occurrences of the word under the cursor in the project.
 
 Make sure you have `fzf` and `ripgrep` installed to fully utilize these features.
 
@@ -170,17 +177,17 @@ The default colorscheme is [nekonight-night](https://github.com/BrunoCiccarino/n
 ### Clipboard Integration
 
 Clipboard integration is enabled by default:
+
 - Copy and paste seamlessly between Vim and your system clipboard using `Ctrl+C` and `Ctrl+V`.
 
 ### ALE and Prettier
 
 - **Linting and Fixing**:
-  - ALE is configured to lint and fix files automatically on save.
-  - Prettier ensures your code stays formatted according to best practices.
+    - ALE is configured to lint and fix files automatically on save.
+    - Prettier ensures your code stays formatted according to best practices.
 
 ### Custom Terminal Commands
 
 For advanced workflows, open an integrated terminal within Vim using `Leader+T`. This allows you to run commands without leaving the editor.
 
 ---
-
