@@ -65,10 +65,23 @@ let g:ale_linters = {
 \   'javascript': ['eslint'],
 \   'javascriptreact': ['eslint'],
 \}
+
 let g:ale_fixers = {
 \   'javascript': ['prettier'],
 \   'javascriptreact': ['prettier'],
+\   'typescript': ['prettier'],
+\   'typescriptreact': ['prettier'],
+\   'css': ['prettier'],
+\   'scss': ['prettier'],
+\   'less': ['prettier'],
+\   'json': ['prettier'],
+\   'graphql': ['prettier'],
+\   'markdown': ['prettier'],
+\   'yaml': ['prettier'],
+\   'html': ['prettier'],
+\   'vue': ['prettier']
 \}
+
 let g:ale_fix_on_save = 1
 
 let g:prettier#exec_cmd_async = 1
