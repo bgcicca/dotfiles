@@ -4,6 +4,8 @@ set expandtab
 set shiftwidth=4
 set tabstop=4
 set autoindent
+set nobackup
+set autoread
 set smartindent
 set mouse=a
 set background=dark
@@ -35,6 +37,27 @@ Plugin 'terryma/vim-multiple-cursors'
 Plugin 'fatih/vim-go'
 Plugin 'junegunn/fzf'
 Plugin 'junegunn/fzf.vim'
+
+" Snippets
+Plugin 'SirVer/ultisnips'
+Plugin 'honza/vim-snippets'
+
+" Html & Css
+Plugin 'hail2u/vim-css3-syntax'
+Plugin 'gko/vim-coloresque'
+Plugin 'tpope/vim-haml'
+Plugin 'mattn/emmet-vim'
+
+" javascript
+Plugin 'jelera/vim-javascript-syntax'
+
+" lua
+Plugin 'xolox/vim-lua-ftplugin'
+Plugin 'xolox/vim-lua-inspect'
+
+" typescript
+Plugin 'leafgarland/typescript-vim'
+Plugin 'HerringtonDarkholme/yats.vim'
 call vundle#end()
 
 filetype plugin indent on
@@ -122,6 +145,14 @@ nnoremap <Leader>b :Buffers<CR>
 nnoremap <Leader>h :History<CR>
 nnoremap <Leader>g :Rg<CR>
 
+if has('unnamedplus')
+  set clipboard=unnamed,unnamedplus
+endif
+
+noremap YY "+y<CR>
+noremap <leader>p "+gP<CR>
+noremap XX "+x<CR>
+
 if executable('rg')
   let g:fzf_command_prefix = 'Fzf'
   let $FZF_DEFAULT_COMMAND = 'rg --files --hidden --glob "!.git/*"'
@@ -136,3 +167,28 @@ if executable('rg')
         \   'rg --hidden --column --line-number --no-heading --color=always --smart-case -- '.shellescape(<q-args>), 1,
         \   fzf#vim#with_preview(), <bang>0)
 endif
+
+let g:indentLine_enabled = 1
+let g:indentLine_concealcursor = ''
+let g:indentLine_char = '|'
+let g:indentLine_faster = 1
+
+" snippets
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<tab>"
+let g:UltiSnipsJumpBackwardTrigger="<c-b>"
+let g:UltiSnipsEditSplit="vertical"
+
+autocmd Filetype html setlocal ts=2 sw=2 expandtab
+
+" javascript
+let g:javascript_enable_domhtmlcss = 1
+
+" vim-javascript
+augroup vimrc-javascript
+  autocmd!
+  autocmd FileType javascript setl tabstop=4|setl shiftwidth=4|setl expandtab softtabstop=4
+augroup END
+
+" typescript
+let g:yats_host_keyword = 1
