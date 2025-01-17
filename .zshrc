@@ -1,7 +1,6 @@
 export ZSH="$HOME/.oh-my-zsh"
 ZSH_THEME=emoji
 DISABLE_LS_COLORS="true"
-ENABLE_CORRECTION="true"
 
 plugins=(git)
 
