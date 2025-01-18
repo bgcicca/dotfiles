@@ -223,3 +223,13 @@ inoremap <C-Space> <Plug>(vimcomplete-complete)
 inoremap <C-n> <Plug>(vimcomplete-next)
 inoremap <C-p> <Plug>(vimcomplete-prev)
 inoremap <C-y> <Plug>(vimcomplete-accept)
+
+autocmd FileType astro setlocal ts=2 sw=2 expandtab
+let g:vimcomplete_languages += ['astro']
+let g:vimcomplete_astro_complete_tags = 1
+let g:vimcomplete_astro_auto_import = 1
+
+inoremap <C-Space> <Plug>(vimcomplete-complete)
+inoremap <C-n> <Plug>(vimcomplete-next)
+inoremap <C-p> <Plug>(vimcomplete-prev)
+inoremap <C-y> <Plug>(vimcomplete-accept)
