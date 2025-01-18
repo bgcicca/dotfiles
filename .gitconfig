@@ -1,0 +1,12 @@
+[user]
+	email = landneco0@gmail.com
+	name = BrunoCiccarino
+[credential "https://github.com"]
+	helper = 
+	helper = !/home/linuxbrew/.linuxbrew/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+	helper = 
+	helper = !/home/linuxbrew/.linuxbrew/bin/gh auth git-credential
+[http]
+	postBuffer = 1048576000
+	sslBackend = gnutls
