@@ -2,24 +2,26 @@
 
 These are my personal dotfiles, including my `.bashrc`, the FastVim distro derived from my personal Neovim configuration, my WezTerm configuration, and my Emacs configuration.
 
+![cicca](./cicca.jpg)
+
 ## Requirements
 
-- **Neovim**: >= **0.10.3** (built with **LuaJIT**).
-- **Git**: >= **2.19.0** (supports partial clones).
-- [**FastVim**](https://github.com/fastvim/fastvim): My custom Neovim configuration.
-- A [**Nerd Font**](https://www.nerdfonts.com/) (v3.0 or greater): **Optional**, but necessary for some icons.
-- A **C compiler** for `nvim-treesitter`. See [nvim-treesitter requirements](https://github.com/nvim-treesitter/nvim-treesitter#requirements).
-- **Telescope.nvim** dependencies (optional):
-    - **live grep**: [ripgrep](https://github.com/BurntSushi/ripgrep).
-    - **find files**: [fd](https://github.com/sharkdp/fd).
-- A terminal supporting true color and _undercurl_:
-    - [WezTerm](https://github.com/wez/wezterm) **(Linux, macOS, Windows)**.
-    - [Alacritty](https://github.com/alacritty/alacritty) **(Linux, macOS, Windows)**.
-    - [iTerm2](https://iterm2.com/) **(macOS)**.
-- [**nekonight**](https://github.com/BrunoCiccarino/nekonight): My custom colorscheme.
-- [**YouCompleteMe**](https://github.com/ycm-core/YouCompleteMe): Autocompletion and code navigation.
-- [**npm**](https://www.npmjs.com/): Required for vim-prettier.
-- [**fzf**](https://github.com/junegunn/fzf): Required for vim config
+-   **Neovim**: >= **0.10.3** (built with **LuaJIT**).
+-   **Git**: >= **2.19.0** (supports partial clones).
+-   [**FastVim**](https://github.com/fastvim/fastvim): My custom Neovim configuration.
+-   A [**Nerd Font**](https://www.nerdfonts.com/) (v3.0 or greater): **Optional**, but necessary for some icons.
+-   A **C compiler** for `nvim-treesitter`. See [nvim-treesitter requirements](https://github.com/nvim-treesitter/nvim-treesitter#requirements).
+-   **Telescope.nvim** dependencies (optional):
+    -   **live grep**: [ripgrep](https://github.com/BurntSushi/ripgrep).
+    -   **find files**: [fd](https://github.com/sharkdp/fd).
+-   A terminal supporting true color and _undercurl_:
+    -   [WezTerm](https://github.com/wez/wezterm) **(Linux, macOS, Windows)**.
+    -   [Alacritty](https://github.com/alacritty/alacritty) **(Linux, macOS, Windows)**.
+    -   [iTerm2](https://iterm2.com/) **(macOS)**.
+-   [**nekonight**](https://github.com/BrunoCiccarino/nekonight): My custom colorscheme.
+-   [**YouCompleteMe**](https://github.com/ycm-core/YouCompleteMe): Autocompletion and code navigation.
+-   [**npm**](https://www.npmjs.com/): Required for vim-prettier.
+-   [**fzf**](https://github.com/junegunn/fzf): Required for vim config
 
 ![preview](./dotfiles.jpg)
 ![wezterm preview](./wezterm.jpg)
@@ -47,8 +49,8 @@ Here’s a quick overview of my configuration:
 
 I’ve set up a launch menu to quickly switch between different shells, depending on my needs:
 
-- **Windows**: Options include PowerShell and PowerShell without profiles for faster startup times.
-- **Linux**: Similarly, I have entries for PowerShell, tailored to Linux environments.
+-   **Windows**: Options include PowerShell and PowerShell without profiles for faster startup times.
+-   **Linux**: Similarly, I have entries for PowerShell, tailored to Linux environments.
 
 This makes it easy to launch the right shell for the task at hand without fiddling with manual configurations.
 
@@ -60,39 +62,39 @@ By default, I’ve set WezTerm to launch PowerShell (`pwsh.exe`), ensuring a mod
 
 Fonts and colors are crucial for readability and aesthetics:
 
-- **Font**: I’m using `JetBrains Mono` as the primary font, with fallbacks like `Fira Code` and `Consolas` for compatibility.
-- **Color Scheme**: The terminal uses the `Dracula` theme, which provides excellent contrast and is easy on the eyes during long coding sessions.
+-   **Font**: I’m using `JetBrains Mono` as the primary font, with fallbacks like `Fira Code` and `Consolas` for compatibility.
+-   **Color Scheme**: The terminal uses the `Dracula` theme, which provides excellent contrast and is easy on the eyes during long coding sessions.
 
 ### Keybindings
 
 To streamline workflows, I’ve customized the keybindings to match my needs. For example:
 
-- Ctrl+C and Ctrl+Shift+C for copying to clipboard.
-- Ctrl+V for pasting from clipboard.
-- Ctrl+Tab for switching to the next tab.
-- Ctrl+Shift+Tab for switching to the previous tab.
-- Alt+Enter to toggle fullscreen mode.
-- Ctrl+1 to Ctrl+9 for activating tabs by index.
-- Ctrl+Shift+Number to activate corresponding tabs by index with shift.
-- Ctrl+`%` and Shift+Ctrl+`%` for horizontal split.
-- Ctrl+`"` and Shift+Ctrl+`"` for vertical split.
-- Ctrl+= and Ctrl+Shift+= to increase font size.
-- Ctrl+- and Ctrl+Shift+- to decrease font size.
-- Ctrl+0 to reset font size.
-- Ctrl+K and Ctrl+Shift+K to clear scrollback.
-- Ctrl+F and Ctrl+Shift+F to search in the terminal.
-- Ctrl+R and Ctrl+Shift+R to reload configuration.
-- Ctrl+T and Ctrl+Shift+T to show the launcher.
-- Ctrl+U and Ctrl+Shift+U for character selection with clipboard copy.
-- Ctrl+W and Ctrl+Shift+W to close the current tab with confirmation.
-- Ctrl+X and Ctrl+Shift+X to activate copy mode.
-- Ctrl+Z and Ctrl+Shift+Z to toggle pane zoom state.
-- Shift+Super+[ and Shift+Super+] to activate the previous or next tab respectively.
-- Ctrl+N to spawn a new window.
-- Ctrl+P to activate the command palette.
-- Ctrl+M to hide the terminal.
-- Ctrl+L and Ctrl+Shift+L to show the debug overlay.
-- Ctrl+Alt+Number for split operations using pane domains.
+-   Ctrl+C and Ctrl+Shift+C for copying to clipboard.
+-   Ctrl+V for pasting from clipboard.
+-   Ctrl+Tab for switching to the next tab.
+-   Ctrl+Shift+Tab for switching to the previous tab.
+-   Alt+Enter to toggle fullscreen mode.
+-   Ctrl+1 to Ctrl+9 for activating tabs by index.
+-   Ctrl+Shift+Number to activate corresponding tabs by index with shift.
+-   Ctrl+`%` and Shift+Ctrl+`%` for horizontal split.
+-   Ctrl+`"` and Shift+Ctrl+`"` for vertical split.
+-   Ctrl+= and Ctrl+Shift+= to increase font size.
+-   Ctrl+- and Ctrl+Shift+- to decrease font size.
+-   Ctrl+0 to reset font size.
+-   Ctrl+K and Ctrl+Shift+K to clear scrollback.
+-   Ctrl+F and Ctrl+Shift+F to search in the terminal.
+-   Ctrl+R and Ctrl+Shift+R to reload configuration.
+-   Ctrl+T and Ctrl+Shift+T to show the launcher.
+-   Ctrl+U and Ctrl+Shift+U for character selection with clipboard copy.
+-   Ctrl+W and Ctrl+Shift+W to close the current tab with confirmation.
+-   Ctrl+X and Ctrl+Shift+X to activate copy mode.
+-   Ctrl+Z and Ctrl+Shift+Z to toggle pane zoom state.
+-   Shift+Super+[ and Shift+Super+] to activate the previous or next tab respectively.
+-   Ctrl+N to spawn a new window.
+-   Ctrl+P to activate the command palette.
+-   Ctrl+M to hide the terminal.
+-   Ctrl+L and Ctrl+Shift+L to show the debug overlay.
+-   Ctrl+Alt+Number for split operations using pane domains.
 
 ### Pane Management
 
@@ -102,8 +104,8 @@ Split panes are an essential feature, allowing me to work on multiple tasks simu
 
 Finally, WezTerm is optimized for performance with settings like:
 
-- `enable_wayland = false` for compatibility with my setup.
-- `term = "xterm-256color"` to ensure compatibility with various applications.
+-   `enable_wayland = false` for compatibility with my setup.
+-   `term = "xterm-256color"` to ensure compatibility with various applications.
 
 ---
 
@@ -157,16 +159,16 @@ Here’s how I’ve customized the keybindings to make navigation and editing a 
 
 I’ve added [fzf.vim](https://github.com/junegunn/fzf.vim) to enhance file searching and navigation:
 
-- **Files Search**:
-    - `Ctrl+P`: Quickly find and open files in the project.
-- **Buffer Navigation**:
-    - `Leader+B`: Switch between open buffers.
-- **Project Search**:
-    - `Leader+G`: Search for text across the entire project using `ripgrep`.
-- **Current Buffer Search**:
-    - `Leader+/`: Search within the current buffer.
-- **Word Search**:
-    - `Leader+*`: Find occurrences of the word under the cursor in the project.
+-   **Files Search**:
+    -   `Ctrl+P`: Quickly find and open files in the project.
+-   **Buffer Navigation**:
+    -   `Leader+B`: Switch between open buffers.
+-   **Project Search**:
+    -   `Leader+G`: Search for text across the entire project using `ripgrep`.
+-   **Current Buffer Search**:
+    -   `Leader+/`: Search within the current buffer.
+-   **Word Search**:
+    -   `Leader+*`: Find occurrences of the word under the cursor in the project.
 
 Make sure you have `fzf` and `ripgrep` installed to fully utilize these features.
 
@@ -178,13 +180,13 @@ The default colorscheme is [nekonight-night](https://github.com/BrunoCiccarino/n
 
 Clipboard integration is enabled by default:
 
-- Copy and paste seamlessly between Vim and your system clipboard using `Ctrl+C` and `Ctrl+V`.
+-   Copy and paste seamlessly between Vim and your system clipboard using `Ctrl+C` and `Ctrl+V`.
 
 ### ALE and Prettier
 
-- **Linting and Fixing**:
-    - ALE is configured to lint and fix files automatically on save.
-    - Prettier ensures your code stays formatted according to best practices.
+-   **Linting and Fixing**:
+    -   ALE is configured to lint and fix files automatically on save.
+    -   Prettier ensures your code stays formatted according to best practices.
 
 ### Custom Terminal Commands
 
@@ -195,5 +197,9 @@ For advanced workflows, open an integrated terminal within Vim using `Leader+T`.
 ### About me
 
 I’m a Brazilian full stack dev, I’m a lua language enthusiast, addicted to neovim/vim and its entire ecosystem, proficient in c, javascript and lua. I like writing about programming and I’m quite curious!
+
+See more about my career on my blog, it's an extension of my brain, everything I learn new I post there.
+
+-   [ciccabruno](https://ciccabruno.vercel.app/)
 
 ![dev](./dev.svg)
