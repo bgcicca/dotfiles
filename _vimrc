@@ -54,11 +54,14 @@ Plugin 'jelera/vim-javascript-syntax'
 " lua
 Plugin 'xolox/vim-lua-ftplugin'
 Plugin 'xolox/vim-lua-inspect'
+Plugin 'xolox/vim-misc'
 
 " typescript
 Plugin 'leafgarland/typescript-vim'
 Plugin 'HerringtonDarkholme/yats.vim'
 
+" completion
+Plugin 'girishji/vimcomplete'
 call vundle#end()
 
 let mapleader = "\\"
@@ -199,3 +202,24 @@ augroup END
 " typescript
 let g:yats_host_keyword = 1
 
+let g:vimcomplete_languages = ['javascript', 'typescript', 'html', 'css', 'cpp']
+
+autocmd FileType javascript,typescript setlocal ts=2 sw=2 expandtab
+let g:vimcomplete_js_complete_keywords = 1
+let g:vimcomplete_ts_complete_keywords = 1
+let g:vimcomplete_ts_auto_import = 1
+
+" HTML e CSS
+autocmd FileType html,css setlocal ts=2 sw=2 expandtab
+let g:vimcomplete_html_complete_tags = 1
+let g:vimcomplete_css_complete_properties = 1
+
+" C/C++
+autocmd FileType c,cpp setlocal ts=4 sw=4 expandtab
+let g:vimcomplete_cpp_complete_keywords = 1
+let g:vimcomplete_cpp_auto_include = 1
+
+inoremap <C-Space> <Plug>(vimcomplete-complete)
+inoremap <C-n> <Plug>(vimcomplete-next)
+inoremap <C-p> <Plug>(vimcomplete-prev)
+inoremap <C-y> <Plug>(vimcomplete-accept)
