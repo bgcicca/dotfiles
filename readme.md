@@ -195,3 +195,5 @@ For advanced workflows, open an integrated terminal within Vim using `Leader+T`.
 ### About me
 
 I’m a Brazilian full stack dev, I’m a lua language enthusiast, addicted to neovim/vim and its entire ecosystem, proficient in c, javascript and lua. I like writing about programming and I’m quite curious!
+
+![dev](./dev.svg)
