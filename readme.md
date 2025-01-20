@@ -192,6 +192,101 @@ Clipboard integration is enabled by default:
 
 For advanced workflows, open an integrated terminal within Vim using `Leader+T`. This allows you to run commands without leaving the editor.
 
+## How Does My Emacs Config Work?
+
+Let’s break down how my Emacs configuration works and how you can navigate it. This setup provides a smooth experience for developers, focusing on productivity and customization. It’s designed to work seamlessly on both **Linux** and **Windows**, with consistent keybindings across platforms.
+
+### Keybindings: A Quick Guide
+
+Here are some custom keybindings that make navigation and editing easier:
+
+1. **File Operations**:
+    - **Ctrl + C + F**: Open Dired (file explorer) in the current directory.
+    - **Ctrl + C + B**: Load a theme selection menu for quick theme switching.
+    - **Ctrl + C + Q**: Save all buffers and quit Emacs.
+
+2. **Eshell and Terminal**:
+    - **Ctrl + C + S**: Open Eshell in a new split window.
+    
+3. **Move Lines**:
+    - **Alt + ↑ / ↓**: Move the current line up or down. This helps in quickly rearranging code lines without leaving edit mode.
+
+4. **Compiling Code**:
+    - **F9**: Compile a simple C/C++ file without needing a Makefile. It automatically detects the file type and uses `gcc` or `g++`.
+
+5. **Evaluating Code**:
+    - **Ctrl + C + C + E**: Evaluate the last expression.
+    - **Ctrl + C + C + R**: Evaluate the selected region.
+
+6. **Theme Switching**:
+    - **Ctrl + C + B**: Switch between different themes easily with a Hydra menu.
+
+### Theme and Visual Customizations
+
+The configuration uses `doom-themes` for a modern, pleasant interface. By default, the **gruber-darker** theme is applied. Emacs’ interface is also streamlined to focus on coding by disabling the toolbar, menu bar, and scroll bars.
+
+- **Fringe Mode**: Set to 15 pixels for better readability.
+- **Line Numbers**: Enabled globally to show line numbers in all buffers.
+- **Visual Line Mode**: Enabled to prevent text from breaking mid-word.
+- **Column Number**: Displays the current column number for precise editing.
+
+### Package Management with `use-package`
+
+This setup uses `use-package` to manage Emacs packages, ensuring that all necessary dependencies are installed automatically. Key repositories are configured:
+
+- **MELPA**: For modern, updated packages.
+- **Org Mode**: For handling notes and tasks.
+- **GNU ELPA**: For stable, official Emacs packages.
+
+### LSP Integration
+
+- **LSP Mode**: Integrated to provide autocompletion, code linting, and navigation for various programming languages, like Python.
+- **lsp-pyright**: Specifically for Python, enabling language server support via Pyright.
+- **lsp-ui**: Enhances the LSP experience with UI elements like documentation popups and code lenses.
+
+### Additional Customizations and Plugins
+
+- **Hydra**: Used for quick command menus. For example, the theme switching menu is a Hydra that pops up with `Ctrl + C + B`.
+- **Paredit**: Installed for working with Lisp-like languages (e.g., Scheme, Clojure). Automatically activated in `emacs-lisp-mode`, `ielm-mode`, `slime-repl-mode`, etc.
+- **Rainbow Delimiters**: Adds colorful parentheses and brackets to make it easier to visualize nested code blocks.
+- **SLIME**: Configured for better Common Lisp interaction.
+- **All The Icons**: Adds icons to various parts of Emacs for a more visually appealing interface.
+- **Vertico & Vertico Posframe**: Provides enhanced vertical completion and autocompletion, with Vertico’s posframe offering a cleaner popup interface for completions.
+
+### Code Compilation for C/C++
+
+- **F9**: Compiles the current C or C++ file directly, without requiring a Makefile. It automatically determines whether to use `gcc` or `g++` based on the file extension.
+
+### File Type Support
+
+The configuration includes custom `auto-mode-alist` entries for various file types:
+
+- **Scheme Files**: Automatically opens in `scheme-mode`.
+- **Lisp Files**: Open in `lisp-mode`.
+- **Emacs Lisp**: Opens with `emacs-lisp-mode`.
+- Custom mode files for **Haskell**, **C**, and **Assembly** are also loaded.
+
+### How to Use It
+
+1. **Open Dired**:
+   - **Ctrl + C + F**: Opens the Dired file explorer in the current directory.
+
+2. **Compile C/C++ Code**:
+   - **F9**: Compiles the C/C++ file in the current buffer without needing a Makefile.
+
+3. **Quick Theme Switching**:
+   - **Ctrl + C + B**: Opens a Hydra menu to change the theme.
+
+4. **Move Lines**:
+   - **Alt + ↑ / ↓**: Move lines of code up or down quickly.
+
+5. **Work with Lisp**:
+   - **Paredit** is enabled for all Lisp-related modes (`emacs-lisp-mode`, `lisp-mode`, `ielm-mode`, etc.), providing smart editing support.
+
+6. **LSP Features**:
+   - With **LSP** and **lsp-pyright**, you get advanced code completion, error highlighting, and documentation popup for Python.
+
+
 ---
 
 ### About me
