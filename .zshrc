@@ -1,5 +1,5 @@
 export ZSH="$HOME/.oh-my-zsh"
-ZSH_THEME=emoji
+ZSH_THEME=nekonight
 DISABLE_LS_COLORS="true"
 
 plugins=(
@@ -19,9 +19,11 @@ else
    export EDITOR='nvim'
 fi
 
+export PATH="/home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin:$PATH"
+
 eval $(thefuck --alias)
 
-export PATH="/home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin:$PATH"
+export PATH="$PATH:~/scripts"
 
 alias -s git="git clone"
 
