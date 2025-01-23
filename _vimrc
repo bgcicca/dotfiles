@@ -64,7 +64,7 @@ Plugin 'HerringtonDarkholme/yats.vim'
 Plugin 'girishji/vimcomplete'
 call vundle#end()
 
-let mapleader = "\\"
+let mapleader = "\<Space>"
 
 set backspace=indent,eol,start
 set termguicolors
