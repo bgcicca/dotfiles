@@ -86,7 +86,7 @@ inoremap <A-Down> <Esc>:m+<CR>a
 inoremap <C-Up> <Esc>v<Up>
 inoremap <C-Down> <Esc>v<Down>
 
-colorscheme nekonight-night
+colorscheme nekonight-moon
 
 let g:ycm_global_ycm_extra_conf = '~/.vim/bundle/YouCompleteMe/third_party/ycmd/examples/ycm_extra_conf.py'
 set completeopt=menuone,noinsert,noselect
