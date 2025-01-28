@@ -4,9 +4,11 @@ case $- in
 esac
 
 export OSH='/home/brunociccarino/.oh-my-bash'
+export FASTVIM_HOME="$HOME/.config/fastvim"
+export DISABLE_OMF_STATS=true
+export LANG=en_US.UTF-8
 
-
-OSH_THEME="nekonight_moon"
+OSH_THEME="nekolight"
 DISABLE_AUTO_UPDATE="true"
 COMPLETION_WAITING_DOTS="true"
 
@@ -16,20 +18,11 @@ plugins=(
   brew
 )
 
-completions=(
-  git
-  composer
-  ssh
-)
-
 aliases=(
   general
 )
 
 source "$OSH"/oh-my-bash.sh
-
-
-export LANG=en_US.UTF-8
 
 if [[ -n $SSH_CONNECTION ]]; then
    export EDITOR='vim'
@@ -50,4 +43,8 @@ alias gitch="git checkout"
 alias gitchb="git checkout -b"
 
 export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
+
+if [ -f /usr/share/bash-completion/bash_completion ]; then
+    . /usr/share/bash-completion/bash_completion
+fi
 
