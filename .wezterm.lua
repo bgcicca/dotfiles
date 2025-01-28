@@ -5,34 +5,26 @@ local launch_menu = {}
 
 if wezterm.target_triple == "x86_64-pc-windows-msvc" then
   table.insert(launch_menu, {
-    label = "Pwsh",
-    args = { "pwsh.exe", "-NoLogo" },
+    label = "NuShell",
+    args = { "nu.exe" },
   })
   table.insert(launch_menu, {
-    label = "PowerShell",
-    args = { "powershell.exe", "-NoLogo" },
-  })
-  table.insert(launch_menu, {
-    label = "Pwsh No Profile",
-    args = { "pwsh.exe", "-NoLogo", "-NoProfile" },
-  })
-  table.insert(launch_menu, {
-    label = "PowerShell No Profile",
-    args = { "powershell.exe", "-NoLogo", "-NoProfile" },
+    label = "NuShell (no config)",
+    args = { "nu.exe", "--no-config" },
   })
 else
   table.insert(launch_menu, {
-    label = "Pwsh",
-    args = { "/usr/local/bin/pwsh", "-NoLogo" },
+    label = "NuShell",
+    args = { "/usr/bin/nu" },
   })
   table.insert(launch_menu, {
-    label = "Pwsh No Profile",
-    args = { "/usr/local/bin/pwsh", "-NoLogo", "-NoProfile" },
+    label = "NuShell (no config)",
+    args = { "/usr/bin/nu", "--no-config" },
   })
 end
 
 return {
-  default_prog = { "pwsh.exe", "-NoLogo" },
+  default_prog = { "nu.exe" },
   launch_menu = launch_menu,
   enable_wayland = false,
 
@@ -49,7 +41,7 @@ return {
   }),
 
 
-  color_scheme = "Dracula",
+  color_scheme = "nekonight_deep_ocean",
 
   keys = {
     { key = 'C',     mods = 'CTRL',           action = act.CopyTo 'Clipboard' },
