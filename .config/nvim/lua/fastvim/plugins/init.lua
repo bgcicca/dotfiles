@@ -8,6 +8,11 @@ return {
     lazy = false,
   },
   {
+    'mrcjkb/rustaceanvim',
+    version = '^5',
+    lazy = false,
+  },
+  {
     "folke/todo-comments.nvim",
     event = "VimEnter",
     dependencies = { "nvim-lua/plenary.nvim" },
