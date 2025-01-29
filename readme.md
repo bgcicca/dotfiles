@@ -289,6 +289,164 @@ The configuration includes custom `auto-mode-alist` entries for various file typ
 
 ---
 
+### Yazi config
+
+I recently started using the yazi file manager, due to its simplicity and configurability, I have nothing to complain about, it's great, here are my detailed keymaps for it.
+
+#### keymaps
+- **General**
+  - `Esc` / `Ctrl + [` - Exit visual mode, clear selected, or cancel search (`escape`)
+  - `q` - Exit the process (`quit`)
+  - `Q` - Exit without writing cwd-file (`quit --no-cwd-file`)
+  - `Ctrl + c` - Close current tab or quit (`close`)
+  - `Ctrl + z` - Suspend process (`suspend`)
+
+- **Hopping**
+  - `k`/`↑` - Move cursor up (`arrow -1`)
+  - `j`/`↓` - Move cursor down (`arrow 1`)
+  - `Ctrl + u`/`Shift + PageUp` - Up half page (`arrow -50%`)
+  - `Ctrl + d`/`Shift + PageDown` - Down half page (`arrow 50%`)
+  - `Ctrl + b`/`PageUp` - Up full page (`arrow -100%`)
+  - `Ctrl + f`/`PageDown` - Down full page (`arrow 100%`)
+  - `g + g` - Top of list (`arrow -99999999`)
+  - `G` - Bottom of list (`arrow 99999999`)
+
+- **Navigation**
+  - `h`/`←` - Go to parent directory (`leave`)
+  - `l`/`→` - Enter directory (`enter`)
+  - `H` - Back in history (`back`)
+  - `L` - Forward in history (`forward`)
+
+- **Seeking**
+  - `K` - Seek up 5 units (`seek -5`)
+  - `J` - Seek down 5 units (`seek 5`)
+
+- **Selection**
+  - `Space` - Toggle selection (`select --state=none`)
+  - `v` - Visual mode (`visual_mode`)
+  - `V` - Visual unset mode (`visual_mode --unset`)
+  - `Ctrl + a` - Select all (`select_all --state=true`)
+  - `Ctrl + r` - Invert selection (`select_all --state=none`)
+
+- **Operations**
+  - `o`/`Enter` - Open files (`open`)
+  - `O`/`Shift + Enter` - Interactive open (`open --interactive`)
+  - `y` - Copy files (`yank`)
+  - `x` - Cut files (`yank --cut`)
+  - `p` - Paste files (`paste`)
+  - `P` - Force paste (`paste --force`)
+  - `-`/`_` - Create symlinks (`link`/`link --relative`)
+  - `Ctrl + -` - Create hardlink (`hardlink`)
+  - `Y`/`X` - Cancel yank (`unyank`)
+  - `d` - Trash files (`remove`)
+  - `D` - Permanent delete (`remove --permanently`)
+  - `a` - Create file/dir (`create`)
+  - `r` - Rename file (`rename --cursor=before_ext`)
+  - `;` - Interactive shell (`shell --interactive`)
+  - `:` - Blocking shell (`shell --block --interactive`)
+  - `.` - Toggle hidden files (`hidden toggle`)
+  - `s`/`S` - Search files/content (`search fd`/`search rg`)
+  - `Ctrl + s` - Cancel search (`escape --search`)
+  - `z`/`Z` - Directory navigation (`plugin zoxide`/`plugin fzf`)
+
+- **Linemodes**
+  - `m + s` - Size linemode (`linemode size`)
+  - `m + p` - Permissions linemode (`linemode permissions`)
+  - `m + c` - ctime linemode (`linemode ctime`)
+  - `m + m` - mtime linemode (`linemode mtime`)
+  - `m + o` - Owner linemode (`linemode owner`)
+  - `m + n` - No linemode (`linemode none`)
+
+- **Copy**
+  - `c + c` - Copy path (`copy path`)
+  - `c + d` - Copy dirname (`copy dirname`)
+  - `c + f` - Copy filename (`copy filename`)
+  - `c + n` - Copy basename (`copy name_without_ext`)
+
+- **Navigation Shortcuts**
+  - `g + h` - Home directory (`cd ~`)
+  - `g + c` - Config directory (`cd ~/.config`)
+  - `g + d` - Downloads directory (`cd ~/Downloads`)
+  - `g + Space` - Interactive cd (`cd --interactive`)
+
+- **Tabs**
+  - `t` - New tab (`tab_create --current`)
+  - `1`-`9` - Switch tabs 1-9 (`tab_switch 0-8`)
+  - `[`/`]` - Previous/next tab (`tab_switch -1/1`)
+  - `{`/`}` - Swap tabs (`tab_swap -1/1`)
+
+- **Help**
+  - `~`/`F1` - Open help (`help`)
+
+**Manager Prepend Keymaps**
+- `c + m` - Chmod files (`plugin chmod`)
+- `Enter` - Smart enter (`plugin --sync smart-enter`)
+- `Alt + p` - Toggle preview (`plugin --sync hide-preview`)
+- `M` - Maximize preview (`plugin --sync max-preview`)
+- `f` - Jump to char (`plugin jump-to-char`)
+
+### Tasks
+- `Esc`/`Ctrl + [`/`Ctrl + c`/`w` - Close manager (`close`)
+- `k`/`↑` - Move up (`arrow -1`)
+- `j`/`↓` - Move down (`arrow 1`)
+- `Enter` - Inspect task (`inspect`)
+- `x` - Cancel task (`cancel`)
+- `~`/`F1` - Help (`help`)
+
+### Select
+- `Esc`/`Ctrl + [`/`Ctrl + c` - Cancel (`close`)
+- `Enter` - Submit (`close --submit`)
+- `k`/`↑` - Move up (`arrow -1`)
+- `j`/`↓` - Move down (`arrow 1`)
+- `~`/`F1` - Help (`help`)
+
+### Input
+- **General**
+  - `Ctrl + c` - Cancel (`close`)
+  - `Enter` - Submit (`close --submit`)
+  - `Esc`/`Ctrl + [` - Normal mode (`escape`)
+
+- **Editing**
+  - `i`/`a` - Insert modes (`insert`/`insert --append`)
+  - `I`/`A` - Smart insert (`move -999`/`move 999`)
+  - `v`/`V` - Visual modes (`visual`/`select all`)
+  - `h`/`←`/`Ctrl + b` - Move left (`move -1`)
+  - `l`/`→`/`Ctrl + f` - Move right (`move 1`)
+  - `b`/`w`/`e` - Word navigation (`backward`/`forward`)
+  - `0`/`Home`/`$`/`End` - Line navigation (`move -999`/`move 999`)
+  - `Backspace`/`Delete` - Delete chars (`backspace`)
+  - `Ctrl + u`/`k`/`w`/`d` - Kill text (`kill`)
+  - `d`/`D`/`c`/`C`/`x` - Cut operations (`delete --cut`)
+  - `y`/`p`/`P` - Yank/paste (`yank`/`paste`)
+  - `u`/`Ctrl + r` - Undo/redo (`undo`/`redo`)
+  - `~`/`F1` - Help (`help`)
+
+**Input Prepend Keymaps**
+- `Esc` - Cancel input (`close`)
+
+### Confirm
+- `Esc`/`Ctrl + [`/`Ctrl + c`/`n` - Cancel (`close`)
+- `Enter`/`y` - Confirm (`close --submit`)
+- `k`/`↑` - Move up (`arrow -1`)
+- `j`/`↓` - Move down (`arrow 1`)
+- `~`/`F1` - Help (`help`)
+
+### Completion
+- `Ctrl + c` - Cancel (`close`)
+- `Tab`/`Enter` - Submit (`close --submit`)
+- `Alt + k`/`↑`/`Ctrl + p` - Move up (`arrow -1`)
+- `Alt + j`/`↓`/`Ctrl + n` - Move down (`arrow 1`)
+- `~`/`F1` - Help (`help`)
+
+### Help
+- `Esc`/`Ctrl + [` - Clear filter/close (`escape`)
+- `q`/`Ctrl + c` - Quit/close (`close`)
+- `k`/`↑` - Move up (`arrow -1`)
+- `j`/`↓` - Move down (`arrow 1`)
+- `f` - Filter help (`filter`)
+
+---
+
 ### About me
 
 I’m a Brazilian full stack dev, I’m a lua language enthusiast, addicted to neovim/vim and its entire ecosystem, proficient in c, javascript and lua. I like writing about programming and I’m quite curious!
