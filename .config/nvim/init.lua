@@ -1,13 +1,5 @@
-require "core.options"
-
-local fastvim_home = os.getenv "FASTVIM_HOME" or vim.fn.expand "~/.config/fastvim"
-
-local lua_path = fastvim_home .. "/lua/?.lua;" .. fastvim_home .. "/lua/?/init.lua"
-package.path = package.path .. ";" .. lua_path
-
-if vim.fn.isdirectory(fastvim_home) == 1 then
-  dofile(fastvim_home .. "/init.lua")
-end
+require "fastvim.core.commands"
+require "fastvim.core.options"
 
 local lazypath = vim.fn.stdpath "data" .. "/lazy/lazy.nvim"
 
@@ -23,6 +15,10 @@ if not vim.loop.fs_stat(lazypath) then
 end
 
 vim.opt.rtp:prepend(lazypath)
+local plugins = require "fastvim.plugins"
 
-local plugins = require "plugins.init"
 require("lazy").setup(plugins)
+
+vim.cmd "syntax enable"
+vim.cmd "colorscheme nekonight-deep-ocean"
+require "fastvim.core.mappings"
