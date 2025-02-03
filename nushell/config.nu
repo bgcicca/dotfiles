@@ -9,3 +9,5 @@ $env.config.history.max_size = 5_000_000
 alias ll = ls -l
 alias gitc = git commit -m 
 
+mkdir ($nu.data-dir | path join "vendor/autoload")
+starship init nu | save -f ($nu.data-dir | path join "vendor/autoload/starship.nu")
