@@ -1,4 +1,4 @@
-# dotfiles (>^.^<)
+# dotfiles 
 
 These are my personal dotfiles, including my `.bashrc`, the FastVim distro derived from my personal Neovim configuration, my WezTerm configuration, and my Emacs configuration.
 
