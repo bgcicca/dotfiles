@@ -8,7 +8,7 @@ export FASTVIM_HOME="$HOME/.config/fastvim"
 export DISABLE_OMF_STATS=true
 export LANG=en_US.UTF-8
 
-OSH_THEME="nekolight"
+eval "$(starship init bash)"
 DISABLE_AUTO_UPDATE="true"
 COMPLETION_WAITING_DOTS="true"
 
@@ -43,6 +43,7 @@ alias gitch="git checkout"
 alias gitchb="git checkout -b"
 
 export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
+export PATH="$HOME/.cargo/bin:$PATH"
 
 if [ -f /usr/share/bash-completion/bash_completion ]; then
     . /usr/share/bash-completion/bash_completion
