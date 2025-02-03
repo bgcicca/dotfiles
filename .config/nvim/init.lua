@@ -1,5 +1,5 @@
-require "fastvim.core.commands"
-require "fastvim.core.options"
+require "core.commands"
+require "core.options"
 
 local lazypath = vim.fn.stdpath "data" .. "/lazy/lazy.nvim"
 
@@ -15,10 +15,10 @@ if not vim.loop.fs_stat(lazypath) then
 end
 
 vim.opt.rtp:prepend(lazypath)
-local plugins = require "fastvim.plugins"
+local plugins = require "plugins"
 
 require("lazy").setup(plugins)
 
 vim.cmd "syntax enable"
-vim.cmd "colorscheme nekonight-deep-ocean"
-require "fastvim.core.mappings"
+vim.cmd "colorscheme nekonight-storm"
+require "core.mappings"

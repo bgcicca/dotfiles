@@ -2,13 +2,7 @@ local map = vim.keymap.set
 local cmd = vim.cmd
 local input = vim.api.nvim_input
 
-local fn = require "fastvim.core.functions"
-
--- TIP: Disable arrow keys in normal mode
--- map('n', '<left>', '<cmd>echo "Use h to move!!"<CR>')
--- map('n', '<right>', '<cmd>echo "Use l to move!!"<CR>')
--- map('n', '<up>', '<cmd>echo "Use k to move!!"<CR>')
--- map('n', '<down>', '<cmd>echo "Use j to move!!"<CR>')
+local fn = require "core.functions"
 
 -- see doc
 map("n", "<C-d>", function()
@@ -100,4 +94,3 @@ map("n", "<C-Up>", ":lua require('multicursor-nvim').lineAddCursor(-1)<CR>", { n
 map("n", "<C-Down>", ":lua require('multicursor-nvim').lineAddCursor(1)<CR>", { noremap = true, silent = true })
 map("n", "<leader><Up>", ":lua require('multicursor-nvim').lineSkipCursor(-1)<CR>", { noremap = true, silent = true })
 map("n", "<leader><Down>", ":lua require('multicursor-nvim').lineSkipCursor(1)<CR>", { noremap = true, silent = true })
-

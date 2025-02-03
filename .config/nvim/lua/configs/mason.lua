@@ -14,7 +14,7 @@ return {
     },
   },
   config = function()
-    local handlers = require "fastvim.core.handlers"
+    local handlers = require "core.handlers"
     local servers = {
       lua_ls = {
         settings = {
