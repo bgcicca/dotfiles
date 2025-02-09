@@ -17,7 +17,7 @@ These are my personal dotfiles, including my `.bashrc`, the FastVim distro deriv
 -   A terminal supporting true color and _undercurl_:
     -   [WezTerm](https://github.com/wez/wezterm) **(Linux, macOS, Windows)**.
     -   [Alacritty](https://github.com/alacritty/alacritty) **(Linux, macOS, Windows)**.
-    -   [iTerm2](https://iterm2.com/) **(macOS)**.
+    -   [kitty](https://sw.kovidgoyal.net/kitty/) **(Linux/macOS)**
 -   [**nekonight**](https://github.com/BrunoCiccarino/nekonight): My custom colorscheme.
 -   [**YouCompleteMe**](https://github.com/ycm-core/YouCompleteMe): Autocompletion and code navigation.
 -   [**npm**](https://www.npmjs.com/): Required for vim-prettier.
