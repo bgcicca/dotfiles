@@ -3,8 +3,10 @@ case $- in
     *) return;;
 esac
 
-export OSH='/home/cicca/.oh-my-bash'
+export OSH='/home/brunociccarino/.oh-my-bash'
+export FASTVIM_HOME="$HOME/.config/fastvim"
 export DISABLE_OMF_STATS=true
+export LANG=en_US.UTF-8
 
 eval "$(starship init bash)"
 DISABLE_AUTO_UPDATE="true"
@@ -28,9 +30,6 @@ else
    export EDITOR='nvim'
  fi
 
-export NVM_DIR="$HOME/.nvm"
-  [ -s "/home/linuxbrew/.linuxbrew/opt/nvm/nvm.sh" ] && \. "/home/linuxbrew/.linuxbrew/opt/nvm/nvm.sh"  
-  [ -s "/home/linuxbrew/.linuxbrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/home/linuxbrew/.linuxbrew/opt/nvm/etc/bash_completion.d/nvm"  
 
 alias bashconfig="mate ~/.bashrc"
 alias ohmybash="mate ~/.oh-my-bash"
