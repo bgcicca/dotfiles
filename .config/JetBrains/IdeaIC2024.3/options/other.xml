@@ -1,0 +1,61 @@
+<application>
+  <component name="FileEditorProviderManager">{}</component>
+  <component name="LangManager">
+    <option name="languageName" value="JAVA" />
+  </component>
+  <component name="NotRoamableUiSettings">
+    <option name="fontSize" value="13.0" />
+    <option name="presentationModeIdeScale" value="1.75" />
+  </component>
+  <component name="PropertyService"><![CDATA[{
+  "keyToString": {
+    "BLOCK_TERMINAL_LAST_USED_DATE": "1739214150",
+    "BLOCK_TERMINAL_LAST_USED_VERSION": "243.23654.189",
+    "MarketplacePluginsSearchHistory": "transl\ntrans\ntra\nrainbow\nrainb",
+    "RunOnceActivity.VFSInitializationConditionsToFusReporter": "true",
+    "aia.promo.page": "true",
+    "ask.about.ctrl.y.shortcut.v2": "true",
+    "build.toolwindow.Build Output.selection.state": "com.intellij.build.BuildTreeConsoleView",
+    "cn.yiiguxing.plugin.translate.version": "3.6.8",
+    "com.intellij.ide.projectWizard.generators.JavaNewProjectWizard$Step.selectedStep": "IntelliJ",
+    "com.intellij.openapi.roots.ui.configuration.TabbedModuleEditor.selectedEditor": "Sources",
+    "defaultJdkConfigured": "true",
+    "enter_selection_count": "5",
+    "experimental.ui.on.first.startup": "true",
+    "experimental.ui.used.version": "243.23654.189",
+    "fileTypeChangedCounter": "1",
+    "fontSizeToResetConsole": "16.0",
+    "fontSizeToResetEditor": "13.0",
+    "got.it.tooltip.cn.yiiguxing.plugin.translate.tooltip.new.engines.tts": "1",
+    "got.it.tooltip.new.terminal.promotion.243": "1",
+    "idea.background.editor": "/home/cicca/Imagens/tokyo.jpg,15,scale,center",
+    "input.method.disabler.muted": "true",
+    "installed.kotlin.plugin.version": "243.23654.189-IJ",
+    "jdk.selected.JAVA_MODULE": "23",
+    "last_opened_file_path": "/home/cicca/Imagens/tokyo.jpg",
+    "llm.installer.last.toolwindow.state": "LLM_INSTALLER",
+    "migrated.non.roamable.values.from.general.settings": "true",
+    "org.intellij.images.editor.actions.BackgroundImageDialog#recent": "/home/cicca/Imagens/pacman.png",
+    "previousColorScheme": "_@user_Deep Ocean",
+    "project.wizard.group": "NPW.simple-module.Java",
+    "registry.to.advanced.settings.migration.build": "IC-243.23654.189"
+  },
+  "keyToStringList": {
+    "file.chooser.recent.files": [
+      "/home/cicca/Imagens/tokyo.jpg",
+      "/home/cicca/Imagens/pacman.png",
+      "/home/cicca/estudo/java"
+    ],
+    "fileTypeDetectors": [
+      "com.intellij.ide.scratch.ScratchFileServiceImpl$Detector",
+      "org.jetbrains.plugins.textmate.TextMateFileType$TextMateFileDetector"
+    ]
+  }
+}]]></component>
+  <component name="TerminalCommandHistoryManager">
+    <command-history-files>
+      <command-history-file filename="java-history" project-path="/home/cicca/estudo/java" last-access-time="1739214145375" />
+      <command-history-file filename="java-history8" project-path="/home/cicca/estudo/java" last-access-time="1739214175454" />
+    </command-history-files>
+  </component>
+</application>

@@ -1,0 +1,148 @@
+<application>
+  <component name="ActionsLocalSummary">
+    <e n="ActivateProjectToolWindow">
+      <i c="1" l="1739188145175" />
+    </e>
+    <e n="Back">
+      <i c="5" l="1739216712424" />
+    </e>
+    <e n="ChangeLaf">
+      <i c="1" l="1739191514194" />
+    </e>
+    <e n="EditorBackSpace">
+      <i c="168" l="1739216273331" />
+    </e>
+    <e n="EditorChooseLookupItem">
+      <i c="42" l="1739216267604" />
+    </e>
+    <e n="EditorCopy">
+      <i c="1" l="1739214463674" />
+    </e>
+    <e n="EditorDown">
+      <i c="172" l="1739216246879" />
+    </e>
+    <e n="EditorEnter">
+      <i c="39" l="1739216265526" />
+    </e>
+    <e n="EditorLeft">
+      <i c="232" l="1739216272266" />
+    </e>
+    <e n="EditorPreviousWordWithSelection">
+      <i c="14" l="1739216233455" />
+    </e>
+    <e n="EditorRight">
+      <i c="298" l="1739216272781" />
+    </e>
+    <e n="EditorTab">
+      <i c="6" l="1739215982439" />
+    </e>
+    <e n="EditorUp">
+      <i c="153" l="1739216246474" />
+    </e>
+    <e n="Images.SetBackgroundImage">
+      <i c="2" l="1739217358838" />
+    </e>
+    <e n="MethodDown">
+      <i c="1" l="1739215959190" />
+    </e>
+    <e n="MoreRunToolbarActions">
+      <i c="2" l="1739193047839" />
+    </e>
+    <e n="MoveStatementDown">
+      <i c="3" l="1739215964671" />
+    </e>
+    <e n="NewClass">
+      <i c="3" l="1739214757314" />
+    </e>
+    <e n="RedesignedRunConfigurationSelector">
+      <i c="8" l="1739217142936" />
+    </e>
+    <e n="Run">
+      <i c="7" l="1739217148113" />
+    </e>
+    <e n="SaveAll">
+      <i c="12" l="1739216274438" />
+    </e>
+    <e n="SettingsEntryPoint">
+      <i c="19" l="1739217277868" />
+    </e>
+    <e n="SettingsSyncStatusAction">
+      <i c="1" l="1739214846376" />
+    </e>
+    <e n="ShowProjectStructureSettings">
+      <i c="3" l="1739213933293" />
+    </e>
+    <e n="ShowSettings">
+      <i c="12" l="1739217349767" />
+    </e>
+    <e n="Terminal.EnableNewUi">
+      <i c="2" l="1739214175419" />
+    </e>
+    <e n="Tree-selectChild">
+      <i c="1" l="1739216904564" />
+    </e>
+    <e n="Tree-selectNext">
+      <i c="5" l="1739216903699" />
+    </e>
+    <e n="Tree-selectParent">
+      <i c="1" l="1739216906704" />
+    </e>
+    <e n="Tree-selectPrevious">
+      <i c="5" l="1739216904241" />
+    </e>
+    <e n="WelcomeScreen.CreateNewProject">
+      <i c="1" l="1739188088136" />
+    </e>
+    <e n="WelcomeScreen.OpenProject">
+      <i c="1" l="1739188094042" />
+    </e>
+    <e n="WelcomeScreen.Plugins">
+      <i c="12" l="1739217279266" />
+    </e>
+    <e n="com.intellij.compiler.progress.BuildOutputService$3">
+      <i c="2" l="1739214122576" />
+    </e>
+    <e n="com.intellij.execution.actions.EditRunConfigAndRunCurrentFileExecutorAction">
+      <i c="1" l="1739193048859" />
+    </e>
+    <e n="com.intellij.execution.actions.RunCurrentFileExecutorAction">
+      <i c="1" l="1739193038342" />
+    </e>
+    <e n="com.intellij.execution.ui.RunToolbarPopupKt$createCurrentFileWithInlineActions$2">
+      <i c="3" l="1739217143927" />
+    </e>
+    <e n="com.intellij.ide.actions.QuickChangeLookAndFeel$LafChangeAction">
+      <i c="1" l="1739191517229" />
+    </e>
+    <e n="com.intellij.ide.startup.importSettings.chooser.productChooser.SkipImportAction">
+      <i c="1" l="1739188053060" />
+    </e>
+    <e n="com.intellij.notification.NotificationAction$Simple">
+      <i c="2" l="1739214108667" />
+    </e>
+    <e n="com.intellij.openapi.fileEditor.impl.tabActions.CloseTab">
+      <i c="3" l="1739217379919" />
+    </e>
+    <e n="com.intellij.openapi.roots.ui.configuration.projectRoot.ModuleStructureConfigurable$AddModuleAction">
+      <i c="1" l="1739213942681" />
+    </e>
+    <e n="com.intellij.openapi.ui.MasterDetailsComponent$MyActionGroupWrapper">
+      <i c="1" l="1739213941178" />
+    </e>
+    <e n="com.intellij.openapi.wm.impl.SquareAnActionButton">
+      <i c="5" l="1739214169202" />
+    </e>
+    <e n="com.intellij.openapi.wm.impl.customFrameDecorations.header.toolbar.MainMenuButton$ShowMenuAction">
+      <i c="13" l="1739217347050" />
+    </e>
+    <e n="com.intellij.toolWindow.ToolWindowHeader$HideAction">
+      <i c="1" l="1739214167286" />
+    </e>
+    <e n="com.intellij.toolWindow.ToolWindowHeader$ShowOptionsAction">
+      <i c="2" l="1739214171518" />
+    </e>
+    <e n="editRunConfigurations">
+      <i c="2" l="1739217135709" />
+    </e>
+  </component>
+</application>

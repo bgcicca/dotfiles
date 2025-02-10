@@ -1,0 +1,445 @@
+<project version="4">
+  <component name="BookmarksManager">
+    <option name="groups">
+      <GroupState>
+        <option name="name" value="java" />
+      </GroupState>
+    </option>
+  </component>
+  <component name="FileEditorManager">
+    <leaf ideFingerprint="8pg67gzinc9h" SIDE_TABS_SIZE_LIMIT_KEY="-1">
+      <file>
+        <entry file="file://$PROJECT_DIR$/src/Main.java">
+          <provider editor-type-id="text-editor" selected="true">
+            <state relative-caret-position="66">
+              <caret line="3" selection-start-line="3" selection-end-line="3" />
+              <folding>
+                <element signature="e#63#64#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+        <tab><![CDATA[{"tabTitle":"Main.java","foregroundColor":-8483178,"textAttributes":{"name":"a","children":[{"name":"option","attributes":{"name":"FOREGROUND","value":"7e8e96"}}]},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,62,10,15,110,111,100,101,115,47,99,108,97,115,115,46,115,118,103,18,21,101,120,112,117,105,47,110,111,100,101,115,47,99,108,97,115,115,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-63,-37,-81,-57,4,48,0]}]]></tab>
+      </file>
+      <file>
+        <entry file="file://$PROJECT_DIR$/src/exercicios/Exercicio08.java">
+          <provider editor-type-id="text-editor" selected="true">
+            <state relative-caret-position="242">
+              <caret line="11" column="34" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+        <tab><![CDATA[{"tabTitle":"Exercicio08.java","foregroundColor":-8483178,"textAttributes":{"name":"a","children":[{"name":"option","attributes":{"name":"FOREGROUND","value":"7e8e96"}}]},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,62,10,15,110,111,100,101,115,47,99,108,97,115,115,46,115,118,103,18,21,101,120,112,117,105,47,110,111,100,101,115,47,99,108,97,115,115,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-63,-37,-81,-57,4,48,0]}]]></tab>
+      </file>
+      <file current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/exercicios/Exercicio09.java">
+          <provider editor-type-id="text-editor" selected="true">
+            <state relative-caret-position="381">
+              <caret line="22" column="27" selection-start-line="22" selection-start-column="27" selection-end-line="22" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+        <tab><![CDATA[{"tabTitle":"Exercicio09.java","foregroundColor":-8483178,"textAttributes":{"name":"a","children":[{"name":"option","attributes":{"name":"FOREGROUND","value":"7e8e96"}}]},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,62,10,15,110,111,100,101,115,47,99,108,97,115,115,46,115,118,103,18,21,101,120,112,117,105,47,110,111,100,101,115,47,99,108,97,115,115,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-63,-37,-81,-57,4,48,0]}]]></tab>
+      </file>
+      <file>
+        <entry file="file://$PROJECT_DIR$/src/Arrays.java">
+          <provider editor-type-id="text-editor" selected="true" />
+        </entry>
+        <tab><![CDATA[{"tabTitle":"Arrays.java","foregroundColor":-8483178,"textAttributes":{"name":"a","children":[{"name":"option","attributes":{"name":"FOREGROUND","value":"7e8e96"}}]},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,62,10,15,110,111,100,101,115,47,99,108,97,115,115,46,115,118,103,18,21,101,120,112,117,105,47,110,111,100,101,115,47,99,108,97,115,115,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-63,-37,-81,-57,4,48,0]}]]></tab>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTypeUsageLocalSummary"><![CDATA[{
+  "data": {
+    "WebPreview": {
+      "usageCount": 3,
+      "lastUsed": 1739217343800
+    },
+    "JAVA": {
+      "usageCount": 24,
+      "lastUsed": 1739217317987
+    }
+  }
+}]]></component>
+  <component name="IdeDocumentHistory">{
+  &quot;changedPaths&quot;: [
+    &quot;/home/cicca/estudo/java/src/Main.java&quot;,
+    &quot;/home/cicca/estudo/java/src/exercicios/Exercicio08.java&quot;,
+    &quot;/home/cicca/estudo/java/src/exercicios/Exercicio09.java&quot;
+  ]
+}</component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="$PROJECT_DIR$/.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="LanguageUsageStatistics">
+    <language id="JAVA">
+      <summary usageCount="24" lastUsage="1739217317987" />
+    </language>
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="Scope" currentSubView="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope" proportions="" version="1" />
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane" />
+      <pane id="Scope">
+        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
+          <expand>
+            <path>
+              <item name="java" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="java" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+            </path>
+            <path>
+              <item name="java" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="java" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="java" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="java" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="exercicios" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+          </expand>
+          <select />
+          <presentation>
+            <attributes />
+            <data iconPath="icons/nodes/project.svg" iconPlugin="com.mallowigi" isLeaf="false" text="java" />
+            <item name="java" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+            <presentation>
+              <attributes>
+                <map>
+                  <entry key="filePath" value="$PROJECT_DIR$" />
+                </map>
+              </attributes>
+              <data isLeaf="false" text="" />
+              <item name="java" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/.idea" />
+                  </map>
+                </attributes>
+                <data isLeaf="false" text=".idea" />
+                <item name=".idea" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/src" />
+                  </map>
+                </attributes>
+                <data isLeaf="false" text="src" />
+                <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+                <presentation>
+                  <attributes>
+                    <map>
+                      <entry key="filePath" value="$PROJECT_DIR$/src/exercicios" />
+                    </map>
+                  </attributes>
+                  <data iconPath="icons/mt/modules/sourceRootOpen.svg" iconPlugin="com.mallowigi" isLeaf="false" text="exercicios" />
+                  <item name="exercicios" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+                  <presentation>
+                    <attributes>
+                      <map>
+                        <entry key="filePath" value="$PROJECT_DIR$/src/exercicios/Exercicio01.java" />
+                      </map>
+                    </attributes>
+                    <data iconPath="glyphs/expui/nodes/class.svg" iconPlugin="com.mallowigi" isLeaf="true" text="Exercicio01" />
+                    <item name="Exercicio01" type="1a9f42e2:ClassTreeNode" />
+                  </presentation>
+                  <presentation>
+                    <attributes>
+                      <map>
+                        <entry key="filePath" value="$PROJECT_DIR$/src/exercicios/Exercicio02.java" />
+                      </map>
+                    </attributes>
+                    <data iconPath="glyphs/expui/nodes/class.svg" iconPlugin="com.mallowigi" isLeaf="true" text="Exercicio02" />
+                    <item name="Exercicio02" type="1a9f42e2:ClassTreeNode" />
+                  </presentation>
+                  <presentation>
+                    <attributes>
+                      <map>
+                        <entry key="filePath" value="$PROJECT_DIR$/src/exercicios/Exercicio03.java" />
+                      </map>
+                    </attributes>
+                    <data iconPath="glyphs/expui/nodes/class.svg" iconPlugin="com.mallowigi" isLeaf="true" text="Exercicio03" />
+                    <item name="Exercicio03" type="1a9f42e2:ClassTreeNode" />
+                  </presentation>
+                  <presentation>
+                    <attributes>
+                      <map>
+                        <entry key="filePath" value="$PROJECT_DIR$/src/exercicios/Exercicio04.java" />
+                      </map>
+                    </attributes>
+                    <data iconPath="glyphs/expui/nodes/class.svg" iconPlugin="com.mallowigi" isLeaf="true" text="Exercicio04" />
+                    <item name="Exercicio04" type="1a9f42e2:ClassTreeNode" />
+                  </presentation>
+                  <presentation>
+                    <attributes>
+                      <map>
+                        <entry key="filePath" value="$PROJECT_DIR$/src/exercicios/Exercicio05.java" />
+                      </map>
+                    </attributes>
+                    <data iconPath="glyphs/expui/nodes/class.svg" iconPlugin="com.mallowigi" isLeaf="true" text="Exercicio05" />
+                    <item name="Exercicio05" type="1a9f42e2:ClassTreeNode" />
+                  </presentation>
+                  <presentation>
+                    <attributes>
+                      <map>
+                        <entry key="filePath" value="$PROJECT_DIR$/src/exercicios/Exercicio06.java" />
+                      </map>
+                    </attributes>
+                    <data iconPath="glyphs/expui/nodes/class.svg" iconPlugin="com.mallowigi" isLeaf="true" text="Exercicio06" />
+                    <item name="Exercicio06" type="1a9f42e2:ClassTreeNode" />
+                  </presentation>
+                  <presentation>
+                    <attributes>
+                      <map>
+                        <entry key="filePath" value="$PROJECT_DIR$/src/exercicios/Exercicio07.java" />
+                      </map>
+                    </attributes>
+                    <data iconPath="glyphs/expui/nodes/class.svg" iconPlugin="com.mallowigi" isLeaf="true" text="Exercicio07" />
+                    <item name="Exercicio07" type="1a9f42e2:ClassTreeNode" />
+                  </presentation>
+                  <presentation>
+                    <attributes>
+                      <map>
+                        <entry key="filePath" value="$PROJECT_DIR$/src/exercicios/Exercicio08.java" />
+                      </map>
+                    </attributes>
+                    <data iconPath="glyphs/expui/nodes/class.svg" iconPlugin="com.mallowigi" isLeaf="true" text="Exercicio08" />
+                    <item name="Exercicio08" type="1a9f42e2:ClassTreeNode" />
+                  </presentation>
+                  <presentation>
+                    <attributes>
+                      <map>
+                        <entry key="filePath" value="$PROJECT_DIR$/src/exercicios/Exercicio09.java" />
+                      </map>
+                    </attributes>
+                    <data iconPath="glyphs/expui/nodes/class.svg" iconPlugin="com.mallowigi" isLeaf="true" text="Exercicio09" />
+                    <item name="Exercicio09" type="1a9f42e2:ClassTreeNode" />
+                  </presentation>
+                </presentation>
+                <presentation>
+                  <attributes>
+                    <map>
+                      <entry key="filePath" value="$PROJECT_DIR$/src/Arrays.java" />
+                    </map>
+                  </attributes>
+                  <data iconPath="glyphs/expui/nodes/class.svg" iconPlugin="com.mallowigi" isLeaf="true" text="Arrays" />
+                  <item name="Arrays" type="1a9f42e2:ClassTreeNode" />
+                </presentation>
+                <presentation>
+                  <attributes>
+                    <map>
+                      <entry key="filePath" value="$PROJECT_DIR$/src/Arrays.class" />
+                    </map>
+                  </attributes>
+                  <data iconPath="files/expui/fileTypes/javaClass.svg" iconPlugin="com.mallowigi" isLeaf="true" text="Arrays.class" />
+                  <item name="Arrays.class" type="ab9368bb:PsiFileNode" />
+                </presentation>
+                <presentation>
+                  <attributes>
+                    <map>
+                      <entry key="filePath" value="$PROJECT_DIR$/src/Main.java" />
+                    </map>
+                  </attributes>
+                  <data iconPath="glyphs/expui/nodes/class.svg" iconPlugin="com.mallowigi" isLeaf="true" text="Main" />
+                  <item name="Main" type="1a9f42e2:ClassTreeNode" />
+                </presentation>
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/.gitignore" />
+                  </map>
+                </attributes>
+                <data isLeaf="true" text=".gitignore" />
+                <item name=".gitignore" type="ab9368bb:PsiFileNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/java.iml" />
+                  </map>
+                </attributes>
+                <data iconPath="icons/nodes/ideaModule.svg" iconPlugin="com.mallowigi" isLeaf="true" text="java.iml" />
+                <item name="java.iml" type="ab9368bb:PsiFileNode" />
+              </presentation>
+            </presentation>
+          </presentation>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="TerminalArrangementManager">
+    <option name="myTabStates">
+      <TerminalTabState tabName="Local" commandHistoryFileName="java-history">
+        <shellCommand>
+          <arg value="/bin/bash" />
+          <arg value="-i" />
+        </shellCommand>
+      </TerminalTabState>
+      <TerminalTabState tabName="Local (2)">
+        <shellCommand>
+          <arg value="/bin/bash" />
+          <arg value="-i" />
+        </shellCommand>
+      </TerminalTabState>
+      <TerminalTabState tabName="Local (3)" commandHistoryFileName="java-history8">
+        <shellCommand>
+          <arg value="/bin/bash" />
+          <arg value="-i" />
+        </shellCommand>
+      </TerminalTabState>
+    </option>
+    <option name="mySelectedTabIndex" value="2" />
+  </component>
+  <component name="ToolWindowManager">
+    <layoutV2>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.33023775" />
+      <window_info id="Commit" order="1" weight="0.25" />
+      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" order="0" />
+      <window_info anchor="bottom" id="Problems" order="1" />
+      <window_info anchor="bottom" id="Problems View" order="2" />
+      <window_info anchor="bottom" id="Terminal" order="3" weight="0.3297258" />
+      <window_info anchor="bottom" id="Run" order="4" show_stripe_button="false" weight="0.3297258" />
+      <window_info anchor="bottom" id="Services" order="5" />
+      <window_info anchor="bottom" id="Build" order="6" weight="0.3297258" />
+      <window_info anchor="right" content_ui="combo" id="Notifications" order="0" weight="0.25" />
+      <window_info anchor="right" id="AIAssistant" order="1" weight="0.25" />
+      <window_info anchor="right" id="Database" order="2" weight="0.25" />
+      <window_info anchor="right" id="Gradle" order="3" weight="0.25" />
+      <window_info anchor="right" id="Key Promoter X" order="4" />
+      <window_info anchor="right" id="Translation.Wordbook" order="5" side_tool="true" />
+      <window_info anchor="right" id="Maven" order="5" weight="0.25" />
+      <unified_weights bottom="0.3297258" left="0.33023775" />
+    </layoutV2>
+    <recentWindows>
+      <value>Run</value>
+      <value>Project</value>
+      <value>Terminal</value>
+      <value>Build</value>
+    </recentWindows>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="165" y="35" width="1030" height="733" key="#Project_Structure" timestamp="1739214118364">
+      <screen x="0" y="35" width="1366" height="733" />
+    </state>
+    <state x="165" y="35" width="1030" height="733" key="#Project_Structure/0.35.1366.733@0.35.1366.733" timestamp="1739214118364" />
+    <state x="277" y="62" width="806" height="685" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1739217141542">
+      <screen x="0" y="35" width="1366" height="733" />
+    </state>
+    <state x="277" y="62" width="806" height="685" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.35.1366.733@0.35.1366.733" timestamp="1739217141542" />
+    <state x="504" y="195" width="531" height="423" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1739193008637">
+      <screen x="0" y="35" width="1366" height="733" />
+    </state>
+    <state x="504" y="195" width="531" height="423" key="#com.intellij.ide.util.TreeClassChooserDialog/0.35.1366.733@0.35.1366.733" timestamp="1739193008637" />
+    <state x="549" y="177" width="430" height="492" key="FileChooserDialogImpl" timestamp="1739217371055">
+      <screen x="0" y="35" width="1366" height="733" />
+    </state>
+    <state x="549" y="177" width="430" height="492" key="FileChooserDialogImpl/0.35.1366.733@0.35.1366.733" timestamp="1739217371055" />
+    <state width="1264" height="186" key="GridCell.Tab.0.bottom" timestamp="1739217183230">
+      <screen x="0" y="35" width="1366" height="733" />
+    </state>
+    <state width="1264" height="186" key="GridCell.Tab.0.bottom/0.35.1366.733@0.35.1366.733" timestamp="1739217183230" />
+    <state width="1264" height="186" key="GridCell.Tab.0.center" timestamp="1739217183230">
+      <screen x="0" y="35" width="1366" height="733" />
+    </state>
+    <state width="1264" height="186" key="GridCell.Tab.0.center/0.35.1366.733@0.35.1366.733" timestamp="1739217183230" />
+    <state width="1264" height="186" key="GridCell.Tab.0.left" timestamp="1739217183230">
+      <screen x="0" y="35" width="1366" height="733" />
+    </state>
+    <state width="1264" height="186" key="GridCell.Tab.0.left/0.35.1366.733@0.35.1366.733" timestamp="1739217183230" />
+    <state width="1264" height="186" key="GridCell.Tab.0.right" timestamp="1739217183230">
+      <screen x="0" y="35" width="1366" height="733" />
+    </state>
+    <state width="1264" height="186" key="GridCell.Tab.0.right/0.35.1366.733@0.35.1366.733" timestamp="1739217183230" />
+    <state x="166" y="35" width="1028" height="733" key="SettingsEditor" timestamp="1739217376080">
+      <screen x="0" y="35" width="1366" height="733" />
+    </state>
+    <state x="166" y="35" width="1028" height="733" key="SettingsEditor/0.35.1366.733@0.35.1366.733" timestamp="1739217376080" />
+    <state x="280" y="53" width="800" height="696" key="new project wizard" timestamp="1739213947172">
+      <screen x="0" y="35" width="1366" height="733" />
+    </state>
+    <state x="280" y="53" width="800" height="696" key="new project wizard/0.35.1366.733@0.35.1366.733" timestamp="1739213947172" />
+    <state x="459" y="277" width="626" height="287" key="org.intellij.images.editor.actions.BackgroundImageDialog" timestamp="1739217372930">
+      <screen x="0" y="35" width="1366" height="733" />
+    </state>
+    <state x="459" y="277" width="626" height="287" key="org.intellij.images.editor.actions.BackgroundImageDialog/0.35.1366.733@0.35.1366.733" timestamp="1739217372930" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/Arrays.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/exercicios/Exercicio08.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="11" column="34" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+          <folding>
+            <element signature="e#63#64#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/exercicios/Exercicio09.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="381">
+          <caret line="22" column="27" selection-start-line="22" selection-start-column="27" selection-end-line="22" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI" />
+      <state key="JdkListConfigurable.UI" />
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>java</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI" />
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
