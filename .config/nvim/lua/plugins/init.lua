@@ -17,6 +17,18 @@ return {
     lazy = false,
   },
   {
+    'mawkler/modicator.nvim',
+    dependencies = 'neko-night/nvim',
+    init = function()
+      vim.o.cursorline = true
+      vim.o.number = true
+      vim.o.termguicolors = true
+    end,
+    opts = {
+      show_warnings = true,
+    }
+  },
+  {
     "OXY2DEV/markview.nvim",
     lazy = false,
 
@@ -126,6 +138,7 @@ return {
   require "configs.dap",
   require "configs.telescope",
   require "configs.mason",
+  require "configs.notify",
   require "configs.bufferline",
   require "configs.neo-tree",
   require "configs.toggleterm",
