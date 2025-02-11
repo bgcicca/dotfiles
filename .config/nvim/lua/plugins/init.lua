@@ -13,6 +13,22 @@ return {
     lazy = false,
   },
   {
+    "mfussenegger/nvim-jdtls",
+    lazy = false,
+  },
+  {
+    "OXY2DEV/markview.nvim",
+    lazy = false,
+
+    dependencies = {
+      "nvim-treesitter/nvim-treesitter",
+      "nvim-tree/nvim-web-devicons"
+    },
+    config = function()
+      require('configs.markview')
+    end
+  },
+  {
     "folke/todo-comments.nvim",
     event = "VimEnter",
     dependencies = { "nvim-lua/plenary.nvim" },
@@ -22,20 +38,20 @@ return {
     "nvim-neorg/neorg",
     lazy = false,
     config = function()
-        require('neorg').setup {
-            load = {
-                ["core.defaults"] = {},
-                ["core.concealer"] = {}, 
-                ["core.dirman"] = { 
-                    config = {
-                        workspaces = {
-                            notes = "~/neorg/notes", 
-                        },
-                        default_workspace = "notes",
-                    },
-                },
+      require('neorg').setup {
+        load = {
+          ["core.defaults"] = {},
+          ["core.concealer"] = {},
+          ["core.dirman"] = {
+            config = {
+              workspaces = {
+                notes = "~/neorg/notes",
+              },
+              default_workspace = "notes",
             },
-        }
+          },
+        },
+      }
     end,
   },
   {
@@ -107,6 +123,7 @@ return {
   require "configs.transparent",
   require "configs.plenary",
   require "configs.mini",
+  require "configs.dap",
   require "configs.telescope",
   require "configs.mason",
   require "configs.bufferline",
