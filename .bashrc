@@ -6,9 +6,24 @@ esac
 export OSH='/home/cicca/.oh-my-bash'
 export DISABLE_OMF_STATS=true
 
-eval "$(starship init bash)"
+# eval "$(starship init bash)"
 DISABLE_AUTO_UPDATE="true"
 COMPLETION_WAITING_DOTS="true"
+
+function msdos_pwd
+{
+    local dir="`pwd`"
+
+    echo $dir | tr '/' '\\'
+}
+
+PROMPT='C:`msdos_pwd`> '
+
+echo 
+echo
+echo "Microsoft(R) Windows 95"
+echo "   (C)Copyright Microsoft Corp 1981-1996."
+echo
 
 plugins=(
   git
