@@ -18,11 +18,12 @@
 (package-refresh-contents)
 (package-install 'doom-themes)
 
+(load-theme 'gruber-darker t)
+
 (unless (package-installed-p 'hydra)
   (package-refresh-contents)
   (package-install 'hydra))
 
-(load-theme 'gruber-darker t)
 
 (global-set-key (kbd "C-c b") 'load-themes/body)
 
@@ -50,8 +51,14 @@
 (load-file "~/.emacs.d/modes/asm-mode.el")
 (load-file "~/.emacs.d/slime/config.el")
 
+(add-to-list 'load-path "~/.emacs.d/lisp/")
+
+(require 'xah-fly-keys)
+
+(xah-fly-keys-set-layout "qwerty-abnt")
+
 (use-package all-the-icons
-  :ensure t)
+    :ensure t)
 
 (defun open-dired ()
   
