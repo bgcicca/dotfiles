@@ -83,9 +83,10 @@
 
 (define-key xah-fly-insert-map (kbd "C-s") 'save-buffer)
 (define-key xah-fly-insert-map (kbd "C-n") 'xah-new-empty-buffer)
+(define-key xah-fly-insert-map (kbd "C-e") 'my-eshell-split-window) 
+(define-key xah-fly-insert-map (kbd "C-t") 'treemacs) 
 (define-key xah-fly-command-map (kbd "S") 'save-buffer)
 (define-key xah-fly-command-map (kbd ".") 'isearch-forward)
-(define-key xah-fly-insert-map (kbd "C-e") 'my-eshell-split-window) 
 
 (xah-fly-keys 1)
 
@@ -112,8 +113,11 @@
 (global-set-key (kbd "M-<up>") 'move-line-up) ;; Alt + ↑
 (global-set-key (kbd "M-<down>") 'move-line-down) ;; Alt + ↓
 
+(require 'dashboard)
+(dashboard-setup-startup-hook)
+
 (use-package vertico
-  :init
+    :init
   (vertico-mode))
 
 (dolist (package '(slime paredit rainbow-delimiters))
@@ -198,7 +202,7 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
-   '(vterm-toggle vterm java-snippets ac-haskell-process auto-complete haskell-mode markdown-mode gruber-darker-theme gams-ac gams-mode ghc-imported-from ghci-completion github-dark-vscode-theme gruvbox-theme lsp-pyright lsp-ui lsp-mode vertico-posframe vertico treemacs all-the-icons doom-themes hydra)))
+   '(dashboard vterm-toggle vterm java-snippets ac-haskell-process auto-complete haskell-mode markdown-mode gruber-darker-theme gams-ac gams-mode ghc-imported-from ghci-completion github-dark-vscode-theme gruvbox-theme lsp-pyright lsp-ui lsp-mode vertico-posframe vertico treemacs all-the-icons doom-themes hydra)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
