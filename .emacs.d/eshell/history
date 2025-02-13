@@ -1,0 +1,9 @@
+exit
+ls
+javac Matrizes.java
+ls
+java Matrizes
+rm -rf Matrizes.class
+clear
+exit
+exit

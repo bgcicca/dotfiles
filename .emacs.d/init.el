@@ -41,6 +41,8 @@
 (setq inhibit-startup-message t)
 (setq-default indent-tabs-mode nil)
 (setq-default tab-width 4)
+(setq initial-scratch-message nil)
+(electric-pair-mode t)
 
 (setq auto-mode-alist (append '(("\\.scm$" . scheme-mode)) auto-mode-alist))
 (setq auto-mode-alist (append '(("\\.lisp$" . lisp-mode)) auto-mode-alist))
@@ -68,14 +70,22 @@
   :config (helm-mode))
 (use-package lsp-treemacs)
 
+(defun my-eshell-split-window ()
+  
+  (interactive)
+  (split-window-below)         
+  (other-window 1)             
+  (eshell))                    
+
 (add-to-list 'load-path "~/.emacs.d/lisp/")
 
 (require 'xah-fly-keys)
 
 (define-key xah-fly-insert-map (kbd "C-s") 'save-buffer)
-
+(define-key xah-fly-insert-map (kbd "C-n") 'xah-new-empty-buffer)
 (define-key xah-fly-command-map (kbd "S") 'save-buffer)
 (define-key xah-fly-command-map (kbd ".") 'isearch-forward)
+(define-key xah-fly-insert-map (kbd "C-e") 'my-eshell-split-window) 
 
 (xah-fly-keys 1)
 
@@ -87,17 +97,6 @@
   (interactive)
   (dired default-directory))
 
-(defun my-eshell-split-window ()
-  
-  (interactive)
-  (split-window-below)         
-  (other-window 1)             
-  (eshell))                    
-
-(global-set-key (kbd "C-c f") 'open-dired)
-(global-set-key (kbd "C-c q") 'save-buffers-kill-emacs)
-
-(global-set-key (kbd "C-c s") 'my-eshell-split-window) 
 
 (defun move-line-up ()
   (interactive)
@@ -160,13 +159,12 @@
   :config
   (vertico-posframe-mode 1))
 
-(ac-config-default)
-(global-auto-complete-mode t)
+;; LSP Mode
 (use-package lsp-mode
+  :ensure t
   :init
   (setq lsp-keymap-prefix "C-c l")
-  :hook ((python-mode . lsp))
-  :commands lsp)
+  :hook ((python-mode . lsp)))
 
 (use-package lsp-ui
   :commands lsp-ui-mode)
@@ -176,8 +174,6 @@
   :hook (python-mode . (lambda ()
                          (require 'lsp-pyright)
                          (lsp))))
-
-
 
 ;;; This will enable emacs to compile a simple cpp single file without any makefile by just pressing [f9] key
 (defun code-compile()
@@ -202,7 +198,7 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
-   '(ac-haskell-process auto-complete haskell-mode markdown-mode gruber-darker-theme gams-ac gams-mode ghc-imported-from ghci-completion github-dark-vscode-theme gruvbox-theme lsp-pyright lsp-ui lsp-mode vertico-posframe vertico treemacs all-the-icons doom-themes hydra)))
+   '(vterm-toggle vterm java-snippets ac-haskell-process auto-complete haskell-mode markdown-mode gruber-darker-theme gams-ac gams-mode ghc-imported-from ghci-completion github-dark-vscode-theme gruvbox-theme lsp-pyright lsp-ui lsp-mode vertico-posframe vertico treemacs all-the-icons doom-themes hydra)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
