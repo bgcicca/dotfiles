@@ -72,7 +72,10 @@
 
 (require 'xah-fly-keys)
 
-(xah-fly-keys-set-layout "qwerty-abnt")
+(define-key xah-fly-insert-map (kbd "C-s") 'save-buffer)
+
+(define-key xah-fly-command-map (kbd "S") 'save-buffer)
+(define-key xah-fly-command-map (kbd ".") 'isearch-forward)
 
 (xah-fly-keys 1)
 
