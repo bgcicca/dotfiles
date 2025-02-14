@@ -18,7 +18,10 @@
 (package-refresh-contents)
 (package-install 'doom-themes)
 
-(load-theme 'gruber-darker t)
+
+;; (load-theme 'gruber-darker t)
+
+(load-theme 'catppuccin :no-confirm)
 
 (unless (package-installed-p 'hydra)
   (package-refresh-contents)
@@ -43,6 +46,7 @@
 (setq-default tab-width 4)
 (setq initial-scratch-message nil)
 (electric-pair-mode t)
+(toggle-read-only nil)
 
 (setq auto-mode-alist (append '(("\\.scm$" . scheme-mode)) auto-mode-alist))
 (setq auto-mode-alist (append '(("\\.lisp$" . lisp-mode)) auto-mode-alist))
@@ -52,6 +56,13 @@
 (load-file "~/.emacs.d/modes/c-mode.el")
 (load-file "~/.emacs.d/modes/asm-mode.el")
 (load-file "~/.emacs.d/slime/config.el")
+
+(require 'yasnippet)
+
+(setq yas/triggers-in-field nil)
+(setq yas-snippet-dirs '("~/.emacs.d/snippets/"))
+
+(yas-global-mode 1)
 
 (use-package projectile)
 (use-package flycheck)
@@ -84,8 +95,10 @@
 (define-key xah-fly-insert-map (kbd "C-s") 'save-buffer)
 (define-key xah-fly-insert-map (kbd "C-n") 'xah-new-empty-buffer)
 (define-key xah-fly-insert-map (kbd "C-e") 'my-eshell-split-window) 
-(define-key xah-fly-insert-map (kbd "C-t") 'treemacs) 
+(define-key xah-fly-insert-map (kbd "C-t") 'treemacs)
 (define-key xah-fly-command-map (kbd "S") 'save-buffer)
+(define-key xah-fly-command-map (kbd "D") 'dired-create-directory)
+(define-key xah-fly-command-map (kbd "F") 'dired-create-empty-file)
 (define-key xah-fly-command-map (kbd ".") 'isearch-forward)
 
 (xah-fly-keys 1)
@@ -97,7 +110,6 @@
   
   (interactive)
   (dired default-directory))
-
 
 (defun move-line-up ()
   (interactive)
@@ -202,7 +214,9 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
-   '(dashboard vterm-toggle vterm java-snippets ac-haskell-process auto-complete haskell-mode markdown-mode gruber-darker-theme gams-ac gams-mode ghc-imported-from ghci-completion github-dark-vscode-theme gruvbox-theme lsp-pyright lsp-ui lsp-mode vertico-posframe vertico treemacs all-the-icons doom-themes hydra)))
+   '(org-preview-html doom catppuccin-theme dashboard vterm-toggle vterm java-snippets ac-haskell-process auto-complete haskell-mode markdown-mode gruber-darker-theme gams-ac gams-mode ghc-imported-from ghci-completion github-dark-vscode-theme gruvbox-theme lsp-pyright lsp-ui lsp-mode vertico-posframe vertico treemacs all-the-icons doom-themes hydra))
+ '(warning-suppress-log-types '((emacs) (emacs) (emacs)))
+ '(warning-suppress-types '((emacs) (emacs))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
