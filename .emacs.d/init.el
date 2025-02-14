@@ -27,7 +27,6 @@
   (package-refresh-contents)
   (package-install 'hydra))
 
-
 (global-set-key (kbd "C-c b") 'load-themes/body)
 
 (set-fringe-mode 15)
@@ -46,7 +45,6 @@
 (setq-default tab-width 4)
 (setq initial-scratch-message nil)
 (electric-pair-mode t)
-(toggle-read-only nil)
 
 (setq auto-mode-alist (append '(("\\.scm$" . scheme-mode)) auto-mode-alist))
 (setq auto-mode-alist (append '(("\\.lisp$" . lisp-mode)) auto-mode-alist))
@@ -56,6 +54,7 @@
 (load-file "~/.emacs.d/modes/c-mode.el")
 (load-file "~/.emacs.d/modes/asm-mode.el")
 (load-file "~/.emacs.d/slime/config.el")
+(load-file "~/.emacs.d/modes/org-mode.el")
 
 (require 'yasnippet)
 
@@ -124,9 +123,6 @@
 
 (global-set-key (kbd "M-<up>") 'move-line-up) ;; Alt + ↑
 (global-set-key (kbd "M-<down>") 'move-line-down) ;; Alt + ↓
-
-(require 'dashboard)
-(dashboard-setup-startup-hook)
 
 (use-package vertico
     :init
