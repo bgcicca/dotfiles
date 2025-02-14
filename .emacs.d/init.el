@@ -96,6 +96,7 @@
 (define-key xah-fly-insert-map (kbd "C-e") 'my-eshell-split-window) 
 (define-key xah-fly-insert-map (kbd "C-t") 'treemacs)
 (define-key xah-fly-command-map (kbd "S") 'save-buffer)
+(define-key xah-fly-command-map (kbd "TD") 'org-todo)
 (define-key xah-fly-command-map (kbd "D") 'dired-create-directory)
 (define-key xah-fly-command-map (kbd "F") 'dired-create-empty-file)
 (define-key xah-fly-command-map (kbd ".") 'isearch-forward)
