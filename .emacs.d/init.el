@@ -21,7 +21,9 @@
 
 ;; (load-theme 'gruber-darker t)
 
-(load-theme 'catppuccin :no-confirm)
+;; (load-theme 'catppuccin :no-confirm)
+
+(load-theme 'doom-one t)
 
 (unless (package-installed-p 'hydra)
   (package-refresh-contents)
@@ -45,6 +47,8 @@
 (setq-default tab-width 4)
 (setq initial-scratch-message nil)
 (electric-pair-mode t)
+(setq make-backup-files nil)
+(setq auto-save-default nil)
 
 (setq auto-mode-alist (append '(("\\.scm$" . scheme-mode)) auto-mode-alist))
 (setq auto-mode-alist (append '(("\\.lisp$" . lisp-mode)) auto-mode-alist))
