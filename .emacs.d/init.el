@@ -18,12 +18,13 @@
 (package-refresh-contents)
 (package-install 'doom-themes)
 
-
+(add-to-list 'custom-theme-load-path
+             "~/.emacs.d/themes/")
 ;; (load-theme 'gruber-darker t)
 
 ;; (load-theme 'catppuccin :no-confirm)
 
-(load-theme 'doom-one t)
+(load-theme 'sexy t)
 
 (unless (package-installed-p 'hydra)
   (package-refresh-contents)
@@ -62,10 +63,11 @@
 
 (require 'yasnippet)
 
-(setq yas/triggers-in-field nil)
+(setq yas-triggers-in-field nil)
 (setq yas-snippet-dirs '("~/.emacs.d/snippets/"))
 
 (yas-global-mode 1)
+(yas-reload-all)
 
 (use-package projectile)
 (use-package flycheck)
@@ -84,6 +86,7 @@
   :config (helm-mode))
 (use-package lsp-treemacs)
 
+
 (defun my-eshell-split-window ()
   
   (interactive)
@@ -97,9 +100,12 @@
 
 (define-key xah-fly-insert-map (kbd "C-s") 'save-buffer)
 (define-key xah-fly-insert-map (kbd "C-n") 'xah-new-empty-buffer)
+(define-key xah-fly-insert-map (kbd "C-k") 'kill-buffer)
 (define-key xah-fly-insert-map (kbd "C-e") 'my-eshell-split-window) 
 (define-key xah-fly-insert-map (kbd "C-t") 'treemacs)
+(define-key xah-fly-insert-map (kbd "C-w") 'delete-window) 
 (define-key xah-fly-command-map (kbd "S") 'save-buffer)
+(define-key xah-fly-command-map (kbd "K") 'kill-buffer)
 (define-key xah-fly-command-map (kbd "TD") 'org-todo)
 (define-key xah-fly-command-map (kbd "D") 'dired-create-directory)
 (define-key xah-fly-command-map (kbd "F") 'dired-create-empty-file)
@@ -214,13 +220,50 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(ignored-local-variable-values
+   '((eval and buffer-file-name
+      (not
+       (eq major-mode 'package-recipe-mode))
+      (or
+       (require 'package-recipe-mode nil t)
+       (let
+           ((load-path
+             (cons "../package-build" load-path)))
+         (require 'package-recipe-mode nil t)))
+      (package-recipe-mode))
+     (eval when
+      (fboundp 'rainbow-mode)
+      (rainbow-mode 1))))
+ '(org-agenda-files '("~/notes/agenda.org"))
  '(package-selected-packages
-   '(org-preview-html doom catppuccin-theme dashboard vterm-toggle vterm java-snippets ac-haskell-process auto-complete haskell-mode markdown-mode gruber-darker-theme gams-ac gams-mode ghc-imported-from ghci-completion github-dark-vscode-theme gruvbox-theme lsp-pyright lsp-ui lsp-mode vertico-posframe vertico treemacs all-the-icons doom-themes hydra))
- '(warning-suppress-log-types '((emacs) (emacs) (emacs)))
- '(warning-suppress-types '((emacs) (emacs))))
+   '(neotree package-lint org-preview-html doom catppuccin-theme dashboard vterm-toggle vterm java-snippets ac-haskell-process auto-complete haskell-mode markdown-mode gruber-darker-theme gams-ac gams-mode ghc-imported-from ghci-completion github-dark-vscode-theme gruvbox-theme lsp-pyright lsp-ui lsp-mode vertico-posframe vertico treemacs all-the-icons doom-themes hydra))
+ '(warning-suppress-log-types
+   '((comp)
+     (comp)
+     (comp)
+     (comp)
+     (comp)
+     (comp)
+     (comp)
+     (comp)
+     (comp)
+     (emacs)
+     (emacs)))
+ '(warning-suppress-types
+   '((comp)
+     (comp)
+     (comp)
+     (comp)
+     (comp)
+     (comp)
+     (comp)
+     (comp)
+     (emacs)
+     (emacs))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  )
+(put 'upcase-region 'disabled nil)
