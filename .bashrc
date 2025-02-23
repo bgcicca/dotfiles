@@ -6,24 +6,9 @@ esac
 export OSH='/home/cicca/.oh-my-bash'
 export DISABLE_OMF_STATS=true
 
-# eval "$(starship init bash)"
+eval "$(starship init bash)"
 DISABLE_AUTO_UPDATE="true"
 COMPLETION_WAITING_DOTS="true"
-
-function msdos_pwd
-{
-    local dir="`pwd`"
-
-    echo $dir | tr '/' '\\'
-}
-
-PROMPT='C:`msdos_pwd`> '
-
-echo 
-echo
-echo "Microsoft(R) Windows 95"
-echo "   (C)Copyright Microsoft Corp 1981-1996."
-echo
 
 plugins=(
   git
@@ -59,7 +44,10 @@ alias gs="git status"
 alias gitch="git checkout"
 alias gitchb="git checkout -b"
 
+alias sbcl='rlwrap sbcl'
+
 export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
+export PATH="$PATH:/home/linuxbrew/.linuxbrew/lib/ruby/gems/3.4.0/gems/t-4.1.1/bin"
 export PATH="$HOME/.cargo/bin:$PATH"
 
 if [ -f /usr/share/bash-completion/bash_completion ]; then
@@ -69,3 +57,5 @@ fi
 export PATH=$HOME/.local/bin:$PATH
 export PATH=$HOME/.local/bin:$PATH
 export PATH=$HOME/.local/bin:$PATH
+
+[ -f "/home/cicca/.ghcup/env" ] && . "/home/cicca/.ghcup/env" # ghcup-env
