@@ -1,15 +1,11 @@
 # dotfiles 
 
-These are my personal dotfiles, including my `.bashrc`, the FastVim distro derived from my personal Neovim configuration, my WezTerm configuration, and my Emacs configuration.
-
-![cicca](./cicca.jpg)
-
 ## Requirements
 
 -   **Neovim**: >= **0.10.3** (built with **LuaJIT**).
 -   **Git**: >= **2.19.0** (supports partial clones).
--   [**FastVim**](https://github.com/fastvim/fastvim): My custom Neovim configuration.
 -   A [**Nerd Font**](https://www.nerdfonts.com/) (v3.0 or greater): **Optional**, but necessary for some icons.
+-   A [**Vim vundle**](https://github.com/VundleVim/Vundle.vim)
 -   A **C compiler** for `nvim-treesitter`. See [nvim-treesitter requirements](https://github.com/nvim-treesitter/nvim-treesitter#requirements).
 -   **Telescope.nvim** dependencies (optional):
     -   **live grep**: [ripgrep](https://github.com/BurntSushi/ripgrep).
@@ -18,7 +14,7 @@ These are my personal dotfiles, including my `.bashrc`, the FastVim distro deriv
     -   [WezTerm](https://github.com/wez/wezterm) **(Linux, macOS, Windows)**.
     -   [Alacritty](https://github.com/alacritty/alacritty) **(Linux, macOS, Windows)**.
     -   [kitty](https://sw.kovidgoyal.net/kitty/) **(Linux/macOS)**
--   [**nekonight**](https://github.com/BrunoCiccarino/nekonight): My custom colorscheme.
+-   [**nekonight**](https://github.com/neko-night/vim): My custom colorscheme.
 -   [**YouCompleteMe**](https://github.com/ycm-core/YouCompleteMe): Autocompletion and code navigation.
 -   [**npm**](https://www.npmjs.com/): Required for vim-prettier.
 -   [**fzf**](https://github.com/junegunn/fzf): Required for vim config
