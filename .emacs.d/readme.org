@@ -1,0 +1,80 @@
+* bgc-emacs
+
+#+html: <a href="https://github.com/bgc-emacs/bgc-emacs/actions/workflows/check.yml"><img src="https://github.com/bgc-emacs/bgc-emacs/actions/workflows/check.yml/badge.svg">
+#+html: <a href="https://www.gnu.org/software/emacs/download.html"><img src="https://img.shields.io/badge/Emacs-30.1+-7F5AB6.svg?logo=gnu%20emacs&logoColor=white" alt="Emacs"></a>
+#+html: <a href="#"><img src="https://img.shields.io/badge/-macOS-lightgrey?logo=apple&style=flat&logoColor=white" alt="macOS"></a>
+#+html: <a href="#"><img src="https://img.shields.io/badge/-Linux-fcc624?logo=linux&style=flat&logoColor=black" alt="Linux"></a>
+#+html: <a href="#"><img src="https://custom-icon-badges.demolab.com/badge/Windows-0078D6?logo=windows11&logoColor=white" alt="windows"></a>
+
+* Table of contents
+
+- [[#Why-emacs][Why emacs?]]
+- [[#A-little-about-the-history-of-emacs][A little about the history of emacs]]
+- [[#Language-support][Language Support]]
+- [[#Installation][Installation]]
+- [[#Keymaps][Keymaps]]
+
+* Why emacs?
+
+Emacs lets you do everything, much more than just edit text. Emacs is not a mere editor like the others, whether in terminal or GUI. Emacs is a development platform, with many more features than a common ide like sublime text or vscode. Emacs is a virtual machine that interprets its own bytecode. Do you realize how incredible this is? If a piece of software survives for more than 30 years, there's something good about it, right?
+
+Emacs can be an IRC client, an email client, a browser, a file manager and much more. You can write ALL types of programs for and in emacs to add more and new features using your own language "Emacs Lisp" popularly called elisp.
+
+Emacs is a programming platform that has an editor. Don't confuse Emacs with other real editors, which can only be used for editing.
+
+In practice, Emacs also offers many editing interfaces: Emacs, Ergoemacs and Evil, xah fly keys (as is the case with this distro) - or Vim within Emacs - built-in keyboard shortcuts. Emacs has built-in tools and interfaces to external tools for many programming languages. Learning Emacs means you can use the same editor for different languages. Otherwise you will have to learn a different editor when you learn a random language.
+
+* A little about the history of emacs
+
+It all started with the teco editor, when it was launched in 1962 for the PDP-1 machine, originally its name was "Tape Editor and Corrector", but later it changed to "Text Editor & Corrector". The PDP-1 machine, which worked through punched paper tape, was the only medium for the storage of program source on our PDP-1. There was no hard disk, floppy disk, magnetic tape (magtape), or network.
+
+By the 1970s, TECO was already an old program, originally released in 1962. Richard Stallman visited the Stanford AI Lab in 1976 and saw the lab's E editor, written by Fred Wright. He was impressed by the intuitive behavior of the WYSIWYG (What You See Is What You Get) editor, which has since become the default behavior of most modern text editors. He returned to MIT, where Carl Mikkelsen, an AI Lab hacker, added a combined display/edit mode to TECO called Control-R that allowed the screen to be refreshed each time the user typed a keystroke. Stallman reimplemented this mode to run efficiently, and then added a macro feature to the TECO display-edit mode that allowed the user to redefine any keystroke to run a TECO program. 
+
+And it had another feature that TECO did not have: random-access editing. TECO was a sequential page editor that was designed for editing paper tape on the PDP-1 at a time when computer memory was generally in short supply due to cost, and it was a feature of TECO that allowed editing on only one page at a time sequentially in the order of the pages in the file. Rather than adopt E's approach of structuring the file for random page access on disk, Stallman modified TECO to handle large buffers more efficiently and changed its file management method to read, edit, and write the entire file as a single buffer. Almost all modern editors use this approach.
+
+The new version of TECO quickly became popular at the AI ​​Lab and soon amassed a large collection of custom macros whose names often ended in MAC or MACS, which stood for macro. Two years later, Guy Steele took on the project of unifying the various macros into a single set. Steele and Stallman's finished implementation included facilities for extending and documenting the new macro set. The resulting system was called EMACS, which stood for MACroS Edition or, alternatively, E with MACroS. Stallman chose the name Emacs "because E' was not in use as an abbreviation in ITS at the time." An apocryphal hacker koan claims that the program was named after Emack & Bolio's, a popular Boston ice cream parlor. The first EMACS operating system existed in late 1976.  
+
+Stallman saw a problem with too much customization and de facto forking, and set certain conditions for its use citation needed EMACS was distributed on a community-sharing basis, meaning that all improvements must be retained in order to be incorporated and distributed.
+
+The original Emacs, like TECO, ran only on the PDP-10 running ITS. Its behavior was sufficiently different from TECO that it could be considered a text editor in its own right, and it quickly became the default editing program on ITS. Mike McMahon ported Emacs from the ITS operating systems to the TENEX and TOPS-20 operating systems. Other contributors to early versions of Emacs included Kent Pitman, Earl Killian, and Eugene Ciccarelli. By 1979, Emacs was the primary editor used at MIT's AI lab and its Computer Science Laboratory. 
+
+* Language support
+
+- [x] Assembly
+- [x] Haskell
+- [x] Lisp
+- [x] Java
+- [x] Html/Css
+- [ ] C/C++
+
+* Installation
+
+To install it, it's very simple, just clone this repository in your home folder, like this example:
+
+#+BEGIN_SRC shell
+git clone https://github.com/bgc-emacs/bgc-emacs ~/.emacs.d
+#+END_SRC
+
+* Keymaps
+
+
+| keybind | description                                                |
+|---------+------------------------------------------------------------|
+| C-s     | save-buffer - Saves the current buffer.                    |
+| C-n     | xah-new-empty-buffer - Creates a new empty buffer.         |
+| C-k     | kill-buffer - Closes the current buffer.                   |
+| C-e s   | my-eshell-split-window - Opens a split window for Eshell.  |
+| C-t     | treemacs - Opens the Treemacs file explorer.               |
+| C-d     | delete-window - Closes the current window.                 |
+| C-i e   | ielm - Opens the Interactive Emacs Lisp Mode (Ielm).       |
+| C-e e   | eval-buffer - Evaluates the entire buffer.                 |
+| C-c D      | org-todo - Toggles the TODO state in Org mode.             |
+| C-D       | dired-create-directory - Creates a new directory in Dired. |
+| C-F       | dired-create-empty-file - Creates an empty file in Dired.  |
+| C-.       | isearch-forward - Starts an incremental search forward.    |
+| esc       | keyboard-escape-quit - quit minibuffer, etc.                  |
+| C-c o     | bgc/open-emacs-config - open your emacs config           |
+| C-c r     | bgc/reload-settings - reload your config                 |
+| C-c p     | bgc/emacs-personal-files - open your config dir          |
+| C-c f     | bgc/open-dired - open dired file explorer                |
+|---------+------------------------------------------------------------|

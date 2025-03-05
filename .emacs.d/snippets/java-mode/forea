@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: forea
+# key: forea
+# --
+
+for (int aux : i) {
+
+}
