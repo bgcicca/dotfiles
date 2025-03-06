@@ -3,10 +3,11 @@ case $- in
     *) return;;
 esac
 
+
 export OSH='/home/cicca/.oh-my-bash'
 export DISABLE_OMF_STATS=true
 
-eval "$(starship init bash)"
+# eval "$(starship init bash)"
 DISABLE_AUTO_UPDATE="true"
 COMPLETION_WAITING_DOTS="true"
 
@@ -27,7 +28,7 @@ export NVM_DIR="$HOME/.nvm"
 source "$OSH"/oh-my-bash.sh
 
 if [[ -n $SSH_CONNECTION ]]; then
-   export EDITOR='vim'
+   export EDITOR='nano'
 else
    export EDITOR='nvim'
  fi
@@ -54,8 +55,6 @@ if [ -f /usr/share/bash-completion/bash_completion ]; then
     . /usr/share/bash-completion/bash_completion
 fi
 
-export PATH=$HOME/.local/bin:$PATH
-export PATH=$HOME/.local/bin:$PATH
 export PATH=$HOME/.local/bin:$PATH
 
 [ -f "/home/cicca/.ghcup/env" ] && . "/home/cicca/.ghcup/env" # ghcup-env
