@@ -1,5 +1,0 @@
----
-title: Getting started
-author: Bruno Ciccarino
-tags: ["tutorial", "hakyll", "hakyll theme", "blog"]
----
