@@ -1,0 +1,149 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-primary: #000;
+  --fg-color: #fff;
+  --nav-color: #4B5263;
+  --link-fg: #58a6ff;
+  --footer-fg: #fff;
+  --border-bg: #c0caf5;
+}
+
+@font-face {
+  font-family: 'JetBrainsMonoNerdFont-Regular';
+  src: url('/fonts/JetBrainsMonoNerdFont-Regular.ttf') format('truetype');
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Excalifont';
+  src: url('/fonts/Excalifont-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: 'JetBrainsMonoNerdFont-Regular';
+  color: var(--fg-color);
+  background-color: var(--bg-primary);
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--bg-primary);
+  z-index: 1000;
+  border-bottom: 0.1rem solid var(--border-bg);
+}
+
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+}
+
+.logo a {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--fg-color);
+  text-decoration: none;
+}
+
+.navbar nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.navbar nav a {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: var(--fg-color);
+  letter-spacing: 1.5px;
+  margin-left: 1.5rem;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.navbar nav a img {
+  height: 20px; 
+  width: 20px;
+}
+
+main {
+  margin-top: 70px;
+  padding: 2rem;
+}
+
+.wrapper {
+  display: flex;
+  gap: 2rem;
+}
+
+.content {
+  flex: 1;
+}
+
+.content a,
+.content article a {
+  color: var(--link-fg);
+  text-decoration: none;
+}
+
+.content a:hover,
+.content article a:hover {
+  text-decoration: underline;
+}
+/* .sidebar {
+  flex-basis: 300px;
+}
+
+.sidebar a {
+  color: var(--link-fg);
+} */
+
+footer {
+  padding: 1.5rem;
+  border-top: 0.1rem solid var(--border-bg);
+  font-family: 'Excalifont';
+  font-size: 1.3rem;
+  color: var(--footer-fg);
+  text-align: center;
+  margin-top: 2rem;
+}
+
+footer a {
+  color: var(--link-fg);
+}
+
+@media (max-width: 768px) {
+  header .container {
+    flex-direction: column;
+  }
+  .navbar nav {
+    margin-top: 1rem;
+    justify-content: center;
+  }
+  .wrapper {
+    flex-direction: column;
+  }
+  .sidebar {
+    flex-basis: auto;
+  }
+}
