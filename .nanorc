@@ -145,7 +145,7 @@ set multibuffer
 # set regexp
 
 ## Save a changed buffer automatically on exit; don't prompt.
-# set saveonexit
+set saveonexit
 
 ## Put the cursor on the highlighted item in the file browser, and
 ## show the cursor in the help viewer; useful for people who use a
@@ -160,7 +160,7 @@ set multibuffer
 # set smarthome
 
 ## Spread overlong lines over multiple screen lines.
-# set softwrap
+set softwrap
 
 ## Use this spelling checker instead of the internal one.  This option
 ## does not have a default value.
@@ -180,7 +180,7 @@ set tabstospaces
 # set trimblanks
 
 ## Save files by default in Unix format (also when they were DOS or Mac).
-# set unix
+set unix
 
 ## The two single-column characters used to display the first characters
 ## of tabs and spaces.  187 in ISO 8859-1 (0000BB in Unicode) and 183 in
@@ -242,7 +242,7 @@ set functioncolor magenta
 include "/usr/share/nano/*.nanorc"
 
 ## Or you can select just the ones you need.  For example:
-# include "/usr/share/nano/html.nanorc"
+include "/usr/share/nano/html.nanorc"
 # include "/usr/share/nano/python.nanorc"
 include "/usr/share/nano/sh.nanorc"
 
